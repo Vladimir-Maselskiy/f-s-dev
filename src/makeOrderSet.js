@@ -3,7 +3,7 @@ import { getShear } from './getShear';
 import { getConerGear } from './getConerGear';
 import { getGetriebe } from './getGetriebe';
 import { getBottomEndingForGetriebe } from './getBottomEndingForGetriebe';
-import { getCenterLocks } from './getcenterLocks';
+import { getCenterLocks } from './getCenterLocks';
 import { getStrikeplates } from './getStrikePlates';
 import { orderList } from './addArticleToOrderList';
 import { getMicroliftPlate } from './getMiсroliftPlate';
