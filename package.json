@@ -29,8 +29,6 @@
   },
   "dependencies": {
     "json-server": "^0.17.0",
-    "number-parsing": "^0.3.2",
-    "xlsx": "^0.18.5",
-    "xlsx-style": "^0.8.13"
+    "number-parsing": "^0.3.2"
   }
 }
