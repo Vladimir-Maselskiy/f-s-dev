@@ -6,7 +6,9 @@
   "homepage": "https://vladimir-maselskiy.github.io/furnitura-systems/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /furnitura-systems/"
+    "build": "parcel build src/*.html --public-url /furnitura-systems/",
+    "server": "json-server --watch macoPrice.json",
+    "server2": "json-server --watch maco.json --port 3005"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,11 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "number-parsing": "^0.3.2",
+    "xlsx": "^0.18.5",
+    "xlsx-style": "^0.8.13"
   }
 }
