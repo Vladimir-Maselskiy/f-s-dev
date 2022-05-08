@@ -1,42 +1,17 @@
 import { refs } from './refs';
-import { getShear } from './getShear';
-import { getConerGear } from './getConerGear';
-import { getGetriebe } from './getGetriebe';
-import { getBottomEndingForGetriebe } from './getBottomEndingForGetriebe';
-import { getCenterLocks } from './getCenterLocks';
-import { getStrikeplates } from './getStrikePlates';
 import { orderList } from './addArticleToOrderList';
-import { getMicroliftPlate } from './getMiсroliftPlate';
-import { getTurningSlantedPlate } from './getTurningSlantedPlate';
-import { getTopHinge } from './getTopHinge';
-import { getBottomHinge } from './getBottomHinge';
-import { getTopDecor } from './getTopDecor.js';
-import { getBottomDecor } from './getBottomDecor';
+import { makeOrder } from './makeOrder';
+import { makeRenderOrder } from './makeRenderOrder';
 
 export function makeOrderSet() {
-  const width = Number(refs.widthInput.value);
-  const height = Number(refs.hightInput.value);
+  let i = 1;
+  const renderedInputFields = refs.formGroup.children;
 
-  getShear(width);
-  getConerGear();
-  getGetriebe(height);
-  getBottomEndingForGetriebe(height);
-  getCenterLocks(width, height);
-  getStrikeplates();
-  getMicroliftPlate();
-  getTurningSlantedPlate();
-  getTopHinge();
-  getBottomHinge();
-  getTopDecor();
-  getBottomDecor();
+  for (let i = 1; i <= renderedInputFields.length; i += 1) {
+    const width = Number(document.querySelector(`#width-input-${i}`).value);
+    const height = Number(document.querySelector(`#height-input-${i}`).value);
+    makeOrder(width, height);
+  }
 
-  // console.log(shear);
-  // console.log(conerGear);
-  // console.log(getriebe);
-  // console.log(bottomEndingForGetriebe);
-  // console.log(centerLocks);
-  // console.log(strikePlates);
-
-  console.log('width: ', width, '   height: ', height);
-  console.log(orderList);
+  makeRenderOrder(orderList);
 }

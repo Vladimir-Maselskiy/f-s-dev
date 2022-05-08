@@ -21,15 +21,19 @@
     
     <form>
       <div class="form-group">
-        <label for="width-input">Ширина</label>
-        <input type="input" class="size-input" id="width-input">
-        <label for="hight-input">Висота</label>
-        <input type="input" class="size-input" id="hight-input">
-        <button type="submit">Порахувать</button>
-        
+        <div class="form-group__input-field" id="1">
+          <label for="width-input">Ширина</label>
+          <input type="input" class="size-input" id="width-input-1">
+          <label for="hight-input">Висота</label>
+          <input type="input" class="size-input" id="height-input-1">
+        </div>
       </div>
-      
+      <button type="submit">Порахувать</button>
     </form>
+    <div class = "add-remove-button-block">
+      <button type="button" class = "add-button">Додати</button>
+      <button type="button"class = "remove-button">Видалити</button>
+    </div>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
     <footer></footer>
