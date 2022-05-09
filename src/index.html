@@ -10,6 +10,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     /> -->
+    <link rel="shortcut icon" type="image/jpg" href="./images/3.jpg">
   </head>
   <body>
     <header>
@@ -26,6 +27,27 @@
           <input type="input" class="size-input" id="width-input-1">
           <label for="hight-input">Висота</label>
           <input type="input" class="size-input" id="height-input-1">
+          <div class="side-of-hinge-radio-block">
+            <p class="side-of-hinge-radio-block__label">Сторона петель:</p>
+            <label>
+              <input type="radio" name="side-of-hinge" value="left" checked />
+            Ліворуч
+            </label>
+            <label>
+              <input type="radio" name="side-of-hinge" value="right" />
+            Праворуч
+            </label>
+          </div>
+          <div class="system-of-pvc-block">
+            <label for="size">Профільна система</label>
+            <select id="1"  >
+              <option value="13" name="system-of-pvc" selected>13-та серія</option>
+              <option value="9" name="system-of-pvc">9-та серія</option>
+              <option value="Salamander" name="system-of-pvc">Salamander(13)</option>
+              <option value="Rehau" name="system-of-pvc">Rehau(13)</option>
+              <option value="Veka" name="system-of-pvc">Veka(13)</option>
+          </select>
+        </div>
         </div>
       </div>
       <button type="submit">Порахувать</button>

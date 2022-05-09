@@ -1,9 +1,12 @@
 import { refs } from './refs';
 
+let i = 1;
+
 export function makeRenderOrder(order) {
   let markup = `
   <thead>
     <tr>
+      <th>Поз.</th>
       <th>Артикул</th>
       <th>Назва</th>
       <th>Кількість</th>
@@ -15,6 +18,7 @@ export function makeRenderOrder(order) {
   order.forEach(element => {
     const tableRow = `
     <tr>
+      <td>${i}</td>
       <td>${element.article}</td>
       <td>${element.name}</td>
       <td>${element.quantity}</td>
@@ -22,8 +26,10 @@ export function makeRenderOrder(order) {
     </tr>
     `;
     markup += tableRow;
+    i += 1;
   });
   markup += `</tbody>`;
+  i = 1;
 
   refs.table = document.createElement('table');
   refs.table.innerHTML = markup;

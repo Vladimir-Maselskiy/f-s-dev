@@ -17,11 +17,11 @@ export function makeOrder(width, height, options) {
   getGetriebe(height);
   getBottomEndingForGetriebe(height);
   getCenterLocks(width, height);
-  getStrikeplates();
-  getMicroliftPlate();
-  getTurningSlantedPlate();
-  getTopHinge();
+  getMicroliftPlate(options);
+  getTurningSlantedPlate(options);
+  getTopHinge(options);
   getBottomHinge();
   getTopDecor();
   getBottomDecor();
+  getStrikeplates(options);
 }

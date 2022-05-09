@@ -6,4 +6,6 @@ export const refs = {
   inputInfoButton: document.querySelector('.input-info'),
   addButton: document.querySelector('.add-button'),
   removeButton: document.querySelector('.remove-button'),
+  sideOfHingeElements: document.querySelectorAll('[name="side-of-hinge"]'),
+  systemOfPVCElements: document.querySelectorAll('[name="system-of-pvc"]'),
 };
