@@ -11,7 +11,7 @@ import { getBottomEndingForGetriebe } from './getBottomEndingForGetriebe';
 import { getCenterLocks } from './getCenterLocks';
 import { getStrikeplates } from './getStrikePlates';
 
-export function makeOrder(width, height, options) {
+export function makeSingleSet(width, height, options) {
   getShear(width);
   getConerGear();
   getGetriebe(height);

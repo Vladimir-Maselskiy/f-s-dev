@@ -16,13 +16,14 @@ export function makeRenderOrder(order) {
   <tbody>
   `;
   order.forEach(element => {
+    const { article, name, quantity, price } = element;
     const tableRow = `
     <tr>
       <td>${i}</td>
-      <td>${element.article}</td>
-      <td>${element.name}</td>
-      <td>${element.quantity}</td>
-      <td>${element.price}</td>
+      <td>${article}</td>
+      <td>${name}</td>
+      <td>${quantity}</td>
+      <td>${price}</td>
     </tr>
     `;
     markup += tableRow;

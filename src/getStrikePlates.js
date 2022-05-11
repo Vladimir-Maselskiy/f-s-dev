@@ -35,10 +35,8 @@ export function getStrikeplates({ systemOfPVC } = options) {
 }
 
 function getQuantityOfPlates(order) {
-  console.log(order);
   let quantity = 0;
   order.forEach(element => {
-    console.log(`Art :${element.article} plates: ${element.VZ}`);
     if (element.VZ) {
       quantity += element.VZ;
     }

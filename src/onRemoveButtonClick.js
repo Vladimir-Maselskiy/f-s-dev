@@ -1,5 +1,10 @@
 import { refs } from './refs';
 
 export function onRemoveButtonClick() {
-  refs.formGroup.lastChild.remove();
+  const orderItems = refs.form.querySelectorAll('.form-group');
+  console.log(orderItems);
+  if (orderItems.length > 1) {
+    const lastChildRef = orderItems[orderItems.length - 1];
+    lastChildRef.remove();
+  }
 }

@@ -1,29 +1,33 @@
 import { refs } from './refs';
 import { orderList } from './addArticleToOrderList';
-import { makeOrder } from './makeOrder';
+import { makeSingleSet } from './makeSingleSet';
 import { makeRenderOrder } from './makeRenderOrder';
 
 export function makeOrderSet() {
   let i = 1;
-  const renderedInputFields = refs.formGroup.children;
+  const renderedInputFields = document.querySelectorAll('.form-group');
 
-  for (let i = 1; i <= renderedInputFields.length; i += 1) {
+  renderedInputFields.forEach((elementRef, i) => {
+    const width = Number(elementRef.querySelector('[data-input="width"]').value);
+    const height = Number(elementRef.querySelector('[data-input="height"]').value);
+
     const options = {};
-    const width = Number(document.querySelector(`#width-input-${i}`).value);
-    const height = Number(document.querySelector(`#height-input-${i}`).value);
-    for (const sideOfHingeRef of refs.sideOfHingeElements) {
+    const sideOfHingeElementsRef = elementRef.querySelectorAll(`[name="side-of-hinge-${i + 1}"]`);
+    const systemOfPVCElementsRef = elementRef.querySelector(`.select-block`).children;
+
+    for (const sideOfHingeRef of sideOfHingeElementsRef) {
       if (sideOfHingeRef.checked) {
         options.sideOfHinge = sideOfHingeRef.value;
       }
     }
-    for (const systemOfPVCRef of refs.systemOfPVCElements) {
+    for (const systemOfPVCRef of systemOfPVCElementsRef) {
       if (systemOfPVCRef.selected) {
         options.systemOfPVC = systemOfPVCRef.value;
       }
     }
+    console.log(options);
 
-    makeOrder(width, height, options);
-  }
-
+    makeSingleSet(width, height, options);
+  });
   makeRenderOrder(orderList);
 }

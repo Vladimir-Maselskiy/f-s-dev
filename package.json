@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "json-server": "^0.17.0",
-    "number-parsing": "^0.3.2",
-    "react-modal": "^3.15.1"
+    "number-parsing": "^0.3.2"
   }
 }
