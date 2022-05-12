@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniture systems</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="shortcut icon" type="image/svg" href="./images/3.svg" />
   </head>
   <body id="body">
@@ -31,6 +31,11 @@
                 >Висота
                 <input type="input" class="size-input" data-input="height" />
               </label>
+              <div id="counter">
+                <button type="button" data-action="decrement">-1</button>
+                <span data-value="value">1</span>
+                <button type="button" data-action="increment">+1</button>
+              </div>
             </div>
             <div class="required-option">
               <div class="side-of-hinge-radio-block">
@@ -68,7 +73,7 @@
             </div>
             <button type="button" data-option="1" class="option-button">Опції</button>
           </div>
-          <button type="submit">Порахувать</button>
+          <button type="submit" disabled>Порахувать</button>
         </form>
         <div class="add-remove-button-block">
           <button type="button" class="add-button">Додати</button>
@@ -91,11 +96,11 @@
         <p class="modal__top-text">Додаткові опції комплекта:</p>
         <label
           >Ширина
-          <input type="input" class="size-input" data-input="width" />
+          <input type="input" class="size-input-modal" data-input="width" />
         </label>
         <label
           >Висота
-          <input type="input" class="size-input" data-input="height" />
+          <input type="input" class="size-input-modal" data-input="height" />
         </label>
 
         <form action="#" class="modal-form">

@@ -18,6 +18,11 @@ export function onAddButtonClick() {
         >Висота
         <input type="input" class="size-input" data-input="height" />
       </label>
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span data-value="value">1</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
         </div>
         <div class="required-option">
           <div class="side-of-hinge-radio-block">

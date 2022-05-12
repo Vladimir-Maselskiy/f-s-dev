@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "json-server": "^0.17.0",
+    "notiflix": "^3.2.5",
     "number-parsing": "^0.3.2"
   }
 }

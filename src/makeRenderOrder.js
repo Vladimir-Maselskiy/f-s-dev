@@ -32,6 +32,9 @@ export function makeRenderOrder(order) {
   markup += `</tbody>`;
   i = 1;
 
+  const tableRef = document.querySelector('table');
+  if (tableRef) tableRef.remove();
+
   refs.table = document.createElement('table');
   refs.table.innerHTML = markup;
   refs.form.insertAdjacentElement('afterend', refs.table);

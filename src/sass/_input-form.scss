@@ -1,0 +1,20 @@
+.size-input {
+  font: inherit;
+  border: 2px solid #bdbdbd;
+}
+
+.size-input.valid {
+  border-color: #4caf50;
+}
+
+.size-input.invalid {
+  border-color: #f44336;
+}
+
+.form-group__input-field {
+  display: flex;
+}
+
+.form-group__input-field > * {
+  margin-right: 20px;
+}

@@ -11,17 +11,19 @@ import { getBottomEndingForGetriebe } from './getBottomEndingForGetriebe';
 import { getCenterLocks } from './getCenterLocks';
 import { getStrikeplates } from './getStrikePlates';
 
-export function makeSingleSet(width, height, options) {
-  getShear(width);
-  getConerGear();
-  getGetriebe(height);
-  getBottomEndingForGetriebe(height);
-  getCenterLocks(width, height);
-  getMicroliftPlate(options);
-  getTurningSlantedPlate(options);
-  getTopHinge(options);
-  getBottomHinge();
-  getTopDecor();
-  getBottomDecor();
-  getStrikeplates(options);
+export function makeSingleSet(width, height, quantitySet, options) {
+  for (let i = 0; i < quantitySet; i += 1) {
+    getShear(width);
+    getConerGear();
+    getGetriebe(height);
+    getBottomEndingForGetriebe(height);
+    getCenterLocks(width, height);
+    getMicroliftPlate(options);
+    getTurningSlantedPlate(options);
+    getTopHinge(options);
+    getBottomHinge();
+    getTopDecor();
+    getBottomDecor();
+    getStrikeplates(options);
+  }
 }

@@ -4,15 +4,27 @@ import { makeOrderSet } from './makeOrderSet.js';
 import { onAddButtonClick } from './onAddButtonClick';
 import { onRemoveButtonClick } from './onRemoveButtonClick';
 import { onOptionButtonClick } from './onOptionButtonClick';
-import { onInputValidate } from './valadateData/onInputValidate';
+import { onFocusIn } from './onFocusIn';
+import { setStatusOfSumbitButton } from './valadateData/setStatusOfSumbitButton';
+import { startCheck } from './valadateData/startCheck';
+import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClasses';
+import { onClickbyForm } from './onClickbyForm';
 
 refs.form.addEventListener('submit', onSubmit);
-refs.form.addEventListener('input', onInputValidate);
+refs.form.addEventListener('click', onClickbyForm);
+refs.form.addEventListener('focusin', onFocusIn);
 refs.addButton.addEventListener('click', onAddButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
 
+startCheck();
+
 function onSubmit(event) {
   event.preventDefault();
+  resetValidStatusOfClasses([...document.querySelectorAll('.size-input')]);
+  setStatusOfSumbitButton();
+  if (!setStatusOfSumbitButton()) {
+    return;
+  }
   makeOrderSet();
 }

@@ -17,3 +17,7 @@ export function addArticleToOrderList(article) {
 export function clearSingleOrder() {
   singleOrder = [];
 }
+
+export function clearOrderlist() {
+  orderList = [];
+}
