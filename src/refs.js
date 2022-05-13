@@ -1,4 +1,5 @@
 export const refs = {
+  currencyRate: document.querySelector('[data-currency-rate="currency-rate"]'),
   form: document.querySelector('form'),
   formGroup: document.querySelector('.form-group'),
   submitButton: document.querySelector('[type="submit"]'),
@@ -10,4 +11,5 @@ export const refs = {
   optionButton: document.querySelector('[data-option="1"]'),
   closeModalButton: document.querySelector('[data-modal-close]'),
   modalBlock: document.querySelector('[data-modal]'),
+  marginButton: document.querySelector('[data-action="margin"]'),
 };

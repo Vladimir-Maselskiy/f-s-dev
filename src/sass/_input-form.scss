@@ -1,3 +1,47 @@
+.input-data-section {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  outline: solid $accent-color;
+}
+
+.size-input,
+.size-input-modal {
+  width: 50px;
+}
+
+.required-option {
+  display: flex;
+  margin-top: 20px;
+}
+.side-of-hinge-radio-block {
+  display: flex;
+  align-items: center;
+}
+
+.system-of-pvc-block {
+  margin-left: 40px;
+}
+
+.side-of-hinge-radio-block__label {
+  margin: 0;
+}
+
+.side-of-hinge-css {
+  margin-left: 20px;
+}
+
+.option-button {
+  margin-top: 20px;
+  width: 100px;
+}
 .size-input {
   font: inherit;
   border: 2px solid #bdbdbd;

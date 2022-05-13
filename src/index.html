@@ -19,6 +19,20 @@
       </div>
     </header>
     <main>
+      <section class="currency-rate__section">
+        <div class="currency-rate__block">
+          <label
+            >Курс Euro
+            <input
+              type="number"
+              class="currency-rate__input"
+              data-currency-rate="currency-rate"
+              value="1.00"
+            />
+          </label>
+          <button type="button" data-action="margin">%data</button>
+        </div>
+      </section>
       <section class="input-data-section">
         <form>
           <div class="form-group" data-form="1">
@@ -71,7 +85,7 @@
                 </select>
               </div>
             </div>
-            <button type="button" data-option="1" class="option-button">Опції</button>
+            <button type="button" data-option="1" class="option-button" disabled>Опції</button>
           </div>
           <button type="submit" disabled>Порахувать</button>
         </form>

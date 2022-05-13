@@ -9,6 +9,7 @@ import { setStatusOfSumbitButton } from './valadateData/setStatusOfSumbitButton'
 import { startCheck } from './valadateData/startCheck';
 import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClasses';
 import { onClickbyForm } from './onClickbyForm';
+import { onMarginButtonClick } from './onMarginButtonClick';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
@@ -16,6 +17,7 @@ refs.form.addEventListener('focusin', onFocusIn);
 refs.addButton.addEventListener('click', onAddButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
+refs.marginButton.addEventListener('click', onMarginButtonClick);
 
 startCheck();
 

@@ -58,7 +58,9 @@ export function onAddButtonClick() {
             </select>
           </div>
         </div>
-        <button type="button"  data-option="${numberOfOrdersComplects + 1}" class="option-button">
+        <button type="button"  data-option="${
+          numberOfOrdersComplects + 1
+        }" class="option-button" disabled>
           Опції
         </button>
     `;

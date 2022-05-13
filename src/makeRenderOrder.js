@@ -1,3 +1,6 @@
+import { numberAfterDecimalPoint } from './const';
+import { getTotalPriceCoefficient } from './getTotalPriceCoefficient';
+import { makeTotalOrderValue } from './makeTotalOrderValue';
 import { refs } from './refs';
 
 let i = 1;
@@ -11,6 +14,7 @@ export function makeRenderOrder(order) {
       <th>Назва</th>
       <th>Кількість</th>
       <th>Ціна</th>
+      <th>Сума</th>
     </tr>
   </thead>
   <tbody>
@@ -23,13 +27,28 @@ export function makeRenderOrder(order) {
       <td>${article}</td>
       <td>${name}</td>
       <td>${quantity}</td>
-      <td>${price}</td>
+      
+      <td>${(price * getTotalPriceCoefficient()).toFixed(numberAfterDecimalPoint)}</td>
+      <td>${(price * quantity * getTotalPriceCoefficient()).toFixed(numberAfterDecimalPoint)}</td>
     </tr>
     `;
     markup += tableRow;
     i += 1;
   });
-  markup += `</tbody>`;
+  const valueOfOrderMarkup = `
+  <tfoot>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Разом:</td>
+      <td>${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
+    </tr>
+    </tfoot>
+  `;
+
+  markup += valueOfOrderMarkup + `</tbody>`;
   i = 1;
 
   const tableRef = document.querySelector('table');
