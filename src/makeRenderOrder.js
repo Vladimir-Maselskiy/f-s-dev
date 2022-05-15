@@ -42,8 +42,8 @@ export function makeRenderOrder(order) {
       <td></td>
       <td></td>
       <td></td>
-      <td>Разом:</td>
-      <td>${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
+      <td></td>
+      <td>Разом:${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
     </tr>
     </tfoot>
   `;

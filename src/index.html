@@ -10,7 +10,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     /> -->
-    <link rel="shortcut icon" type="image/svg" href="./images/3.svg" />
+    <link rel="shortcut icon" type="image/svg" href="./images/3.svg" sizes="32x32" />
   </head>
   <body id="body">
     <header>
@@ -108,17 +108,29 @@
           </svg>
         </button>
         <p class="modal__top-text">Додаткові опції комплекта:</p>
-        <label
-          >Ширина
-          <input type="input" class="size-input-modal" data-input="width" />
-        </label>
-        <label
-          >Висота
-          <input type="input" class="size-input-modal" data-input="height" />
-        </label>
+        <div class="size-input-modal-block">
+          <label
+            >Ширина
+            <input type="input" class="size-input-modal" data-input="width" />
+          </label>
+          <label
+            >Висота
+            <input type="input" class="size-input-modal" data-input="height" />
+          </label>
+        </div>
 
-        <form action="#" class="modal-form">
-          <button type="submit" class="form__submit-button">
+        <div class="optional-settings-block">
+          <form action="#" class="modal-form">
+          <label
+            >Висота від низу до ручки
+            <input type="input" class="size-input-modal" data-input="handle-distance" />
+          </label>
+          <label>
+            Зимове провітрювання
+            <input type="checkbox" name="micro-ventilation" value="micro-ventilation" checked />
+          </label>
+        </div>
+          <button type="submit" class="modal__submit-button">
             <span class="form__submit-title">Застосувати</span>
           </button>
         </form>

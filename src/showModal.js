@@ -1,7 +1,16 @@
+import { setStartHandleDistanceInModel } from './Getriebe/setStartHandleDistanceInModel';
 import { refs } from './refs';
-import { onCloseModalButton } from './onCloseModalButton';
 
-export function showModal(idOfSingleOrder) {
+export function showModal(formID) {
+  console.log(formID);
   refs.modalBlock.classList.remove('is-hidden');
-  refs.closeModalButton.addEventListener('click', onCloseModalButton);
+  const widthInFormInputRef = document.querySelector(
+    `.form-group[data-form="${formID}"] [data-input="width"]`,
+  );
+  const heightInFormInputRef = document.querySelector(
+    `.form-group[data-form="${formID}"] [data-input="height"]`,
+  );
+  refs.widthInModalInput.value = widthInFormInputRef.value;
+  refs.heightInModalInputRef.value = heightInFormInputRef.value;
+  setStartHandleDistanceInModel();
 }

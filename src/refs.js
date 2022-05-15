@@ -9,7 +9,10 @@ export const refs = {
   addButton: document.querySelector('.add-button'),
   removeButton: document.querySelector('.remove-button'),
   optionButton: document.querySelector('[data-option="1"]'),
-  closeModalButton: document.querySelector('[data-modal-close]'),
+  closeModalButton: document.querySelector('.modal__submit-button'),
+  widthInModalInput: document.querySelector('.size-input-modal[data-input="width"]'),
+  heightInModalInputRef: document.querySelector('.size-input-modal[data-input="height"]'),
+  handleDistanceInModel: document.querySelector('.size-input-modal[data-input="handle-distance"]'),
   modalBlock: document.querySelector('[data-modal]'),
   marginButton: document.querySelector('[data-action="margin"]'),
 };

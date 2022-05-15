@@ -1,7 +1,15 @@
 import { showModal } from './showModal';
-import { getSetIDByOptionButton } from './getSetDByOptionButton';
+import { getOptionButtonID } from './getOptionButtonID';
+import { validateFormInputFields } from './valadateData/validateFormInputFields';
 
 export function onOptionButtonClick(event) {
-  const setIDByOptionButton = getSetIDByOptionButton();
-  showModal();
+  console.log(event.currentTarget);
+  const inputCurrentFields = document.querySelectorAll(
+    `.form-group[data-form="${Number(event.target.dataset.option)}"] .size-input`,
+  );
+
+  if (!validateFormInputFields(inputCurrentFields)) return;
+  const setIDByOptionButton = Number(event.target.dataset.option);
+
+  showModal(setIDByOptionButton);
 }

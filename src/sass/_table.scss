@@ -7,8 +7,7 @@ table {
   border: 3px solid purple;
 }
 
-thead th,
-tfoot td {
+thead th {
   text-align: center;
 }
 
@@ -52,6 +51,10 @@ thead th:nth-child(2) {
 
 tfoot {
   padding: 15px, 0;
+}
+
+tfoot td {
+  text-align: left;
 }
 
 tbody tr:nth-child(odd) {

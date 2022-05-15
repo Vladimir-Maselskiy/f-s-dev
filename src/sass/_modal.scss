@@ -7,8 +7,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-
-
 .is-hidden.backdrop {
   //   visibility: 0;
   opacity: 0;
@@ -30,8 +28,6 @@ body.modal-open {
   width: 100%;
   height: 100%;
   min-height: 440px;
-  padding-right: 200px;
-  padding-left: 100px;
 
   background: rgba(0, 0, 0, 0.2);
   transition-property: opacity;
@@ -57,6 +53,17 @@ body.modal-open {
   transition-property: scale, transform, opacity;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.optional-settings-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.optional-settings-block > label:not(:first-child) {
+  margin-top: 20px;
 }
 
 .modal__close-button {
@@ -234,7 +241,7 @@ body.modal-open {
   text-decoration-skip-ink: none;
 }
 
-.form__submit-button {
+.modal__submit-button {
   display: flex;
   padding: 0;
   width: 200px;

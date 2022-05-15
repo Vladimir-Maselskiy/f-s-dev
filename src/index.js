@@ -10,6 +10,7 @@ import { startCheck } from './valadateData/startCheck';
 import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClasses';
 import { onClickbyForm } from './onClickbyForm';
 import { onMarginButtonClick } from './onMarginButtonClick';
+import { onCloseModalButton } from './onCloseModalButton';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
@@ -18,6 +19,7 @@ refs.addButton.addEventListener('click', onAddButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
+refs.closeModalButton.addEventListener('click', onCloseModalButton);
 
 startCheck();
 
