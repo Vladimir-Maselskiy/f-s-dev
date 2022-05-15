@@ -3,6 +3,6 @@ import { refs } from '../refs';
 
 export function makeModalOptionObjectOnCloseModal(id) {
   const modalOption = findModalOptionObjectByID(id);
-  modalOption.hanleDistance = refs.handleDistanceInModal.value;
+  modalOption.hanleDistance = Number(refs.handleDistanceInModal.value);
   modalOption.microVentilation = refs.microVentilationInModal.checked;
 }

@@ -2,7 +2,7 @@ export const sizeRestrictions = {
   minWidth: 400,
   maxWidth: 1300,
   minHeight: 800,
-  maxHeight: 2250,
+  maxHeight: 2400,
 };
 
 export const numberAfterDecimalPoint = 2;

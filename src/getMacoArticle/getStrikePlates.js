@@ -1,5 +1,9 @@
 import { maco } from '../../maco.json';
-import { addArticleToOrderList, singleOrder, clearSingleOrder } from '../addArticleToOrderList';
+import {
+  addArticleToOrderList,
+  singleOrder,
+  clearSingleOrder,
+} from '../actionFuncs/addArticleToOrderList';
 
 export function getStrikeplates({ systemOfPVC } = options) {
   const quantityOfPlates = getQuantityOfPlates(singleOrder);

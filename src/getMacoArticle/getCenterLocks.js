@@ -1,7 +1,8 @@
 import { maco } from '../../maco.json';
-import { addArticleToOrderList } from '../addArticleToOrderList';
+import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 
-export function getCenterLocks(width, height) {
+export function getCenterLocks(options) {
+  const { width, height } = options;
   if (width > 480 && width < 800) {
     addArticleToOrderList(maco.find(element => element.article === 228398));
   }

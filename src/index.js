@@ -30,5 +30,6 @@ function onSubmit(event) {
   if (!setStatusOfSumbitButton()) {
     return;
   }
+
   makeOrderSet();
 }

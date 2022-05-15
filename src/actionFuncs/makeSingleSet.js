@@ -11,13 +11,14 @@ import { getBottomEndingForGetriebe } from '../getMacoArticle/getBottomEndingFor
 import { getCenterLocks } from '../getMacoArticle/getCenterLocks';
 import { getStrikeplates } from '../getMacoArticle/getStrikePlates';
 
-export function makeSingleSet(width, height, quantitySet, options) {
+export function makeSingleSet(options) {
+  const { width, height, quantitySet } = options;
   for (let i = 0; i < quantitySet; i += 1) {
     getShear(width);
-    getConerGear();
-    getGetriebe(height);
+    getConerGear(options);
+    getGetriebe(options);
     getBottomEndingForGetriebe(height);
-    getCenterLocks(width, height);
+    getCenterLocks(options);
     getMicroliftPlate(options);
     getTurningSlantedPlate(options);
     getTopHinge(options);
