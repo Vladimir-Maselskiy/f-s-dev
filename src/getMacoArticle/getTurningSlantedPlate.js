@@ -1,5 +1,5 @@
-import { maco } from '../maco.json';
-import { addArticleToOrderList } from './addArticleToOrderList';
+import { maco } from '../../maco.json';
+import { addArticleToOrderList } from '../addArticleToOrderList';
 
 export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
   if (

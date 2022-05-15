@@ -1,15 +1,15 @@
-import { getMicroliftPlate } from './getMiсroliftPlate';
-import { getTurningSlantedPlate } from './getTurningSlantedPlate';
-import { getTopHinge } from './getTopHinge';
-import { getBottomHinge } from './getBottomHinge';
-import { getTopDecor } from './getTopDecor.js';
-import { getBottomDecor } from './getBottomDecor';
-import { getShear } from './getShear';
-import { getConerGear } from './getConerGear';
-import { getGetriebe } from './getGetriebe';
-import { getBottomEndingForGetriebe } from './getBottomEndingForGetriebe';
-import { getCenterLocks } from './getCenterLocks';
-import { getStrikeplates } from './getStrikePlates';
+import { getMicroliftPlate } from './getMacoArticle/getMiсroliftPlate';
+import { getTurningSlantedPlate } from './getMacoArticle/getTurningSlantedPlate';
+import { getTopHinge } from './getMacoArticle/getTopHinge';
+import { getBottomHinge } from './getMacoArticle/getBottomHinge';
+import { getTopDecor } from './getMacoArticle/getTopDecor.js';
+import { getBottomDecor } from './getMacoArticle/getBottomDecor';
+import { getShear } from './getMacoArticle/getShear';
+import { getConerGear } from './getMacoArticle/getConerGear';
+import { getGetriebe } from './getMacoArticle/Getriebe/getGetriebe';
+import { getBottomEndingForGetriebe } from './getMacoArticle/getBottomEndingForGetriebe';
+import { getCenterLocks } from './getMacoArticle/getCenterLocks';
+import { getStrikeplates } from './getMacoArticle/getStrikePlates';
 
 export function makeSingleSet(width, height, quantitySet, options) {
   for (let i = 0; i < quantitySet; i += 1) {

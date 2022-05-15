@@ -1,5 +1,5 @@
-import { maco } from '../maco.json';
-import { addArticleToOrderList } from './addArticleToOrderList';
+import { maco } from '../../maco.json';
+import { addArticleToOrderList } from '../addArticleToOrderList';
 
 export function getShear(width) {
   if (width >= 400 && width < 600) {

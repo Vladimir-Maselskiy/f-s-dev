@@ -1,5 +1,5 @@
-import { maco } from '../maco.json';
-import { addArticleToOrderList } from './addArticleToOrderList';
+import { maco } from '../../maco.json';
+import { addArticleToOrderList } from '../addArticleToOrderList';
 
 export function getBottomEndingForGetriebe(height) {
   if (height > 470 && height < 1750) {

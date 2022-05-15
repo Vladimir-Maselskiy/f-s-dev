@@ -1,5 +1,5 @@
-import { maco } from '../maco.json';
-import { addArticleToOrderList } from './addArticleToOrderList';
+import { maco } from '../../maco.json';
+import { addArticleToOrderList } from '../addArticleToOrderList';
 
 export function getTopHinge({ systemOfPVC } = options) {
   addArticleToOrderList(maco.find(element => element.article === 52480));

@@ -1,4 +1,4 @@
-import { refs } from '../refs';
+import { refs } from '../../refs';
 
 export function setStartHandleDistanceInModel() {
   if (!isNaN(refs.heightInModalInputRef.value)) {
