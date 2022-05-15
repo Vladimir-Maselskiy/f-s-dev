@@ -1,5 +1,5 @@
-import { setStartHandleDistanceInModel } from './getMacoArticle/Getriebe/setStartHandleDistanceInModel';
-import { refs } from './refs';
+import { setStartHandleDistanceInModel } from '../getMacoArticle/Getriebe/setStartHandleDistanceInModel';
+import { refs } from '../refs';
 
 export function showModal(formID) {
   console.log(formID);

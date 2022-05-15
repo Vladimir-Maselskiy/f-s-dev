@@ -1,5 +1,5 @@
-import { decrementValue } from './counterValue/decrementValue';
-import { incrementValue } from './counterValue/incrementValue';
+import { decrementValue } from '../counterValue/decrementValue';
+import { incrementValue } from '../counterValue/incrementValue';
 
 export function onClickbyForm(event) {
   const parentNode = event.target.parentNode;

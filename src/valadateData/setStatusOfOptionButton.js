@@ -1,4 +1,4 @@
-import { getOptionButtonID } from '../getOptionButtonID';
+import { getOptionButtonID } from '../calcFuncs/getOptionButtonID';
 import { refs } from '../refs';
 import { isRefHasValidClass } from './isRefHasValidClass';
 import { resetValidStatusOfClass } from './resetValidStatusOfClass';

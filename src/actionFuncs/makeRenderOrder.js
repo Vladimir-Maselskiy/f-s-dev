@@ -1,7 +1,7 @@
-import { numberAfterDecimalPoint } from './const';
-import { getTotalPriceCoefficient } from './getTotalPriceCoefficient';
-import { makeTotalOrderValue } from './makeTotalOrderValue';
-import { refs } from './refs';
+import { numberAfterDecimalPoint } from '../const';
+import { getTotalPriceCoefficient } from '../calcFuncs/getTotalPriceCoefficient';
+import { makeTotalOrderValue } from '../calcFuncs/getTotalOrderValue';
+import { refs } from '../refs';
 
 let i = 1;
 

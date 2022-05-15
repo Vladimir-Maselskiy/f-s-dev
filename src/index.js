@@ -1,16 +1,16 @@
 import './sass/main.scss';
 import { refs } from './refs';
-import { makeOrderSet } from './makeOrderSet.js';
-import { onAddButtonClick } from './onAddButtonClick';
-import { onRemoveButtonClick } from './onRemoveButtonClick';
-import { onOptionButtonClick } from './onOptionButtonClick';
-import { onFocusIn } from './onFocusIn';
+import { makeOrderSet } from './actionFuncs/makeOrderSet.js';
+import { onAddButtonClick } from './eventHandlers/onAddButtonClick';
+import { onRemoveButtonClick } from './eventHandlers/onRemoveButtonClick';
+import { onOptionButtonClick } from './eventHandlers/onOptionButtonClick';
+import { onFocusIn } from './eventHandlers/onFocusIn';
 import { setStatusOfSumbitButton } from './valadateData/setStatusOfSumbitButton';
 import { startCheck } from './valadateData/startCheck';
 import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClasses';
-import { onClickbyForm } from './onClickbyForm';
-import { onMarginButtonClick } from './onMarginButtonClick';
-import { onCloseModalButton } from './onCloseModalButton';
+import { onClickbyForm } from './eventHandlers/onClickbyForm';
+import { onMarginButtonClick } from './eventHandlers/onMarginButtonClick';
+import { onCloseModalButton } from './eventHandlers/onCloseModalButton';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);

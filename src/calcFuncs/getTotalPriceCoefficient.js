@@ -1,4 +1,4 @@
-import { clientPercentage } from './const';
+import { clientPercentage } from '../const';
 import { getCurrentRate } from './getCurrentRate';
 
 export function getTotalPriceCoefficient() {

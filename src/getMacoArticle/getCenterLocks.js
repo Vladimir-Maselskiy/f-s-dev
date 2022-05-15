@@ -1,5 +1,5 @@
 import { maco } from '../../maco.json';
-import { addArticleToOrderList } from '../addArticleToOrderList';
+import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 
 export function getCenterLocks(width, height) {
   if (width > 480 && width < 800) {

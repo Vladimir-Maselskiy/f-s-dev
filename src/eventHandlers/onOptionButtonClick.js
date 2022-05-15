@@ -1,6 +1,6 @@
-import { showModal } from './showModal';
-import { getOptionButtonID } from './getOptionButtonID';
-import { validateFormInputFields } from './valadateData/validateFormInputFields';
+import { showModal } from '../actionFuncs/showModal';
+import { getOptionButtonID } from '../calcFuncs/getOptionButtonID';
+import { validateFormInputFields } from '../valadateData/validateFormInputFields';
 
 export function onOptionButtonClick(event) {
   console.log(event.currentTarget);

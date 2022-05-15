@@ -1,5 +1,5 @@
 import { Confirm } from 'notiflix/build/notiflix-confirm-aio';
-import { clientPercentage } from './const';
+import { clientPercentage } from '../const';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 
 export function onMarginButtonClick() {

@@ -1,4 +1,4 @@
-import { refs } from './refs';
+import { refs } from '../refs';
 
 export function onRemoveButtonClick() {
   const orderItems = refs.form.querySelectorAll('.form-group');

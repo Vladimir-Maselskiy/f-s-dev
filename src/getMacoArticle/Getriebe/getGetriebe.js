@@ -1,5 +1,5 @@
 import { maco } from '../../../maco.json';
-import { addArticleToOrderList } from '../../addArticleToOrderList';
+import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
 
 export function getGetriebe(height) {
   if (height > 850 && height < 1250) {
