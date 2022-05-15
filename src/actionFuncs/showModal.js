@@ -2,7 +2,6 @@ import { setStartHandleDistanceInModel } from '../getMacoArticle/Getriebe/setSta
 import { refs } from '../refs';
 
 export function showModal(formID) {
-  console.log(formID);
   refs.modalBlock.classList.remove('is-hidden');
   const widthInFormInputRef = document.querySelector(
     `.form-group[data-form="${formID}"] [data-input="width"]`,

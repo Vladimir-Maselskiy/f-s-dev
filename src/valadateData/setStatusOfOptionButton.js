@@ -1,10 +1,8 @@
-import { getOptionButtonID } from '../calcFuncs/getOptionButtonID';
-import { refs } from '../refs';
+import { getCurrentIDByInputBlur } from '../calcFuncs/getCurrentIDByInputBlur';
 import { isRefHasValidClass } from './isRefHasValidClass';
-import { resetValidStatusOfClass } from './resetValidStatusOfClass';
 
 export function setStatusOfOptionButton(event) {
-  const optionButtonID = getOptionButtonID(event);
+  const optionButtonID = getCurrentIDByInputBlur(event);
   const inputCurrentFields = document.querySelectorAll(
     `.form-group[data-form="${optionButtonID}"] .size-input`,
   );

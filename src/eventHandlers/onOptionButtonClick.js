@@ -1,9 +1,13 @@
+import { modalObjectActionOnOpenModal } from '../actionFuncs/modalObjectActionOnOpenModal';
 import { showModal } from '../actionFuncs/showModal';
-import { getOptionButtonID } from '../calcFuncs/getOptionButtonID';
+import { getCurrentIDByOptionButtonClick } from '../calcFuncs/getCurrentIDByOptionButtonClick';
 import { validateFormInputFields } from '../valadateData/validateFormInputFields';
 
 export function onOptionButtonClick(event) {
-  console.log(event.currentTarget);
+  const currentID = getCurrentIDByOptionButtonClick(event);
+  console.log(currentID);
+  modalObjectActionOnOpenModal(currentID);
+
   const inputCurrentFields = document.querySelectorAll(
     `.form-group[data-form="${Number(event.target.dataset.option)}"] .size-input`,
   );

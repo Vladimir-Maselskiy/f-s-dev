@@ -1,13 +1,14 @@
 import { onOptionButtonClick } from './onOptionButtonClick';
 import { refs } from '../refs';
+import { getNextCurrentID } from '../calcFuncs/getNextCurrentID';
 
 export function onAddButtonClick() {
   const numberOfOrdersComplects = document.querySelectorAll('.form-group').length;
   const newFormGroup = document.createElement('div');
   newFormGroup.classList.add('form-group');
-  newFormGroup.dataset.form = `${numberOfOrdersComplects + 1}`;
+  const formID = getNextCurrentID();
+  newFormGroup.dataset.form = `${formID}`;
 
-  //   newInputField.id = numbersOfRenderedInputFields + 1;
   const markup = `   
         <div class="form-group__input-field">
         <label
@@ -30,7 +31,7 @@ export function onAddButtonClick() {
             <label>
               <input
                 type="radio"
-                name="side-of-hinge-${numberOfOrdersComplects + 1}"
+                name="side-of-hinge-${formID}"
                 class="side-of-hinge-css"
                 value="left"
               />
@@ -39,7 +40,7 @@ export function onAddButtonClick() {
             <label>
               <input
                 type="radio"
-                name="side-of-hinge-${numberOfOrdersComplects + 1}"
+                name="side-of-hinge-${formID}"
                 class="side-of-hinge-css"
                 value="right"
                 checked
@@ -58,9 +59,7 @@ export function onAddButtonClick() {
             </select>
           </div>
         </div>
-        <button type="button"  data-option="${
-          numberOfOrdersComplects + 1
-        }" class="option-button" disabled>
+        <button type="button"  data-option="${formID}" class="option-button" disabled>
           Опції
         </button>
     `;
@@ -68,6 +67,6 @@ export function onAddButtonClick() {
   newFormGroup.innerHTML = markup;
   refs.form.lastElementChild.insertAdjacentElement('beforebegin', newFormGroup);
   document
-    .querySelector(`[data-option="${numberOfOrdersComplects + 1}"]`)
+    .querySelector(`[data-option="${formID}"]`)
     .addEventListener('click', onOptionButtonClick);
 }
