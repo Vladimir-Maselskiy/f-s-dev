@@ -1,5 +1,5 @@
 import { maco } from '../../maco.json';
-import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { addArticleToOrderList } from '../addArticleToOrderList';
 
 export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
   if (

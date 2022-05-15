@@ -1,4 +1,4 @@
-import { orderList, clearOrderlist } from './addArticleToOrderList';
+import { orderList, clearOrderlist } from '../addArticleToOrderList';
 import { makeSingleSet } from './makeSingleSet';
 import { makeRenderOrder } from './makeRenderOrder';
 
