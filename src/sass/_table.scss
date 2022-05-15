@@ -54,7 +54,7 @@ tfoot {
 }
 
 tfoot td {
-  text-align: left;
+  text-align: center;
 }
 
 tbody tr:nth-child(odd) {
@@ -67,4 +67,8 @@ tbody tr:nth-child(even) {
 
 table {
   background-color: #f9f9fa;
+}
+
+.total-value {
+  text-align: right;
 }

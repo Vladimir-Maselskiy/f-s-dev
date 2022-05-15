@@ -38,12 +38,8 @@ export function makeRenderOrder(order) {
   const valueOfOrderMarkup = `
   <tfoot>
   <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Разом:${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
+      <td colspan="5" class ="total-value">Разом:</td>
+      <td >${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
     </tr>
     </tfoot>
   `;
