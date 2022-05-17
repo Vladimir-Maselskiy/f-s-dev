@@ -1,3 +1,4 @@
 export function getCurrentIDByOptionButtonClick(event) {
-  return Number(event.target.parentNode.dataset.form);
+  console.log(event.target.parentNode.parentNode.dataset.form);
+  return Number(event.currentTarget.parentNode.parentNode.dataset.form);
 }

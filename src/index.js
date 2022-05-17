@@ -1,4 +1,5 @@
 import './sass/main.scss';
+
 import { refs } from './refs';
 import { makeOrderSet } from './actionFuncs/makeOrderSet.js';
 import { onAddButtonClick } from './eventHandlers/onAddButtonClick';
@@ -32,4 +33,5 @@ function onSubmit(event) {
   }
 
   makeOrderSet();
+  refs.addButton.style.display = 'none';
 }

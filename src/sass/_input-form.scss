@@ -5,11 +5,16 @@
 }
 
 .form-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15px;
-  outline: solid $accent-color;
+  outline: solid $accent-color 2px;
+}
+
+.width-height-quantity-block {
+  display: flex;
 }
 
 .size-input,
@@ -19,6 +24,7 @@
 
 .required-option {
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }
 .side-of-hinge-radio-block {
@@ -27,7 +33,7 @@
 }
 
 .system-of-pvc-block {
-  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .side-of-hinge-radio-block__label {
@@ -38,10 +44,6 @@
   margin-left: 20px;
 }
 
-.option-button {
-  margin-top: 20px;
-  width: 100px;
-}
 .size-input {
   font: inherit;
   border: 2px solid #bdbdbd;
@@ -57,8 +59,9 @@
 
 .form-group__input-field {
   display: flex;
+  flex-direction: column;
 }
 
-.form-group__input-field > * {
+.width-height-quantity-block label {
   margin-right: 20px;
 }

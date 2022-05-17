@@ -1,0 +1,67 @@
+<div class='form-group__input-field'>
+  <div class='width-height-quantity-block'>
+    <label>Ширина
+      <input type='input' class='size-input' data-input='width' />
+    </label>
+    <label>Висота
+      <input type='input' class='size-input' data-input='height' />
+    </label>
+    <div id='counter'>
+      <button type='button' data-action='decrement'>-1</button>
+      <span data-value='value'>1</span>
+      <button type='button' data-action='increment'>+1</button>
+    </div>
+  </div>
+  <div class='required-option'>
+    <div class='side-of-hinge-radio-block'>
+      <p class='side-of-hinge-radio-block__label'>Сторона петель:</p>
+      <label>
+        <input
+          type='radio'
+          name='side-of-hinge-{{formID}}'
+          class='side-of-hinge-css'
+          value='left'
+        />
+        Ліворуч
+      </label>
+      <label>
+        <input
+          type='radio'
+          name='side-of-hinge-{{formID}}'
+          class='side-of-hinge-css'
+          value='right'
+          checked
+        />
+        Праворуч
+      </label>
+    </div>
+    <div class='system-of-pvc-block'>
+      <label for='size'>Профільна система</label>
+      <select class='select-block'>
+        <option value='13' name='system-of-pvc' selected>13-та серія</option>
+        <option value='9' name='system-of-pvc'>9-та серія</option>
+        <option value='Salamander' name='system-of-pvc'>Salamander(13)</option>
+        <option value='Rehau' name='system-of-pvc'>Rehau(13)</option>
+        <option value='Veka' name='system-of-pvc'>Veka(13)</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class='remove-option-button-block'>
+  <button
+    type='button'
+    data-option='{{formID}}'
+    class='button-icon option-button'
+    data-action='options'
+    disabled
+  >
+    <svg class='button-icon-svg'>
+      <use href='/symbol-defs.4fba6ab5.svg#icon-cogs'></use>
+    </svg>
+  </button>
+  <button type='button' class='button-icon remote-button' data-action='remote'>
+    <svg class='button-icon-svg'>
+      <use href='/symbol-defs.4fba6ab5.svg#icon-bin'></use>
+    </svg>
+  </button>
+</div>

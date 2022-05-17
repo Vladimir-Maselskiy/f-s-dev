@@ -8,7 +8,7 @@ export const refs = {
   heightInput: document.querySelector('[data-input="height"]'),
   inputInfoButton: document.querySelector('.input-info'),
   addButton: document.querySelector('.add-button'),
-  removeButton: document.querySelector('.remove-button'),
+  removeButton: document.querySelector('[data-action="remote"]'),
   optionButton: document.querySelector('[data-option="1"]'),
 
   // modalRefs
