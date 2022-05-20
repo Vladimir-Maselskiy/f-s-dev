@@ -35,22 +35,34 @@
       </section>
       <section class="input-data-section">
         <form>
-          <div class="form-group" data-form="1">
+          <div class="form-group .container" data-form="1">
               <div class="form-group__input-field">
+                <div class="form-counter">34</div>
                 <div class="width-height-quantity-block">
-                <label
-                  >Ширина
-                  <input type="input" class="size-input" data-input="width" />
-                </label>
-                <label
-                  >Висота
-                  <input type="input" class="size-input" data-input="height" />
-                </label>
-                <div id="counter">
-                  <button type="button" data-action="decrement">-1</button>
-                  <span data-value="value">1</span>
-                  <button type="button" data-action="increment">+1</button>
-                </div>
+                  <label class="label"
+                    >Ширина
+                    <input type="number" class="size-input" data-input="width" />
+                  </label>
+                  <label
+                    >Висота
+                    <input type="number" class="size-input" data-input="height" />
+                  </label>
+                  <div id="counter" class="counter-block">
+                    <p>Кількість</p>
+                    <div class="counter">
+                    <button type="button" data-action="decrement">
+                      <svg class="counter-button__icon" data-action="decrement">
+                        <use href="./symbol-defs.svg#icon-minus" data-action="decrement"></use>
+                      </svg>
+                    </button>
+                    <span data-value="value" class="counter-value">1</span>
+                    <button type="button" data-action="increment">
+                      <svg class="counter-button__icon" data-action="increment">
+                        <use class="counter-button_icon__icon" href="./symbol-defs.svg#icon-plus" data-action="increment"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  </div>
                 </div>
                 <div class="required-option">
                   <div class="side-of-hinge-radio-block">

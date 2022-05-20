@@ -2,14 +2,19 @@ import { decrementValue } from '../counterValue/decrementValue';
 import { incrementValue } from '../counterValue/incrementValue';
 
 export function onClickbyForm(event) {
-  const parentNode = event.target.parentNode;
-  const spanRef = parentNode.querySelector('span');
+  if (event.target.dataset.action === 'decrement' || event.target.dataset.action === 'increment') {
+    const currentFormRef = event.target.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-  if (event.target.dataset.action === 'decrement') {
-    decrementValue(spanRef);
-  }
+    const spanRef = currentFormRef.querySelector('.counter-value');
 
-  if (event.target.dataset.action === 'increment') {
-    incrementValue(spanRef);
+    if (event.target.dataset.action === 'decrement') {
+      decrementValue(spanRef);
+    }
+
+    if (event.target.dataset.action === 'increment') {
+      incrementValue(spanRef);
+    }
+
+    return;
   }
 }

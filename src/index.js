@@ -12,15 +12,19 @@ import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClas
 import { onClickbyForm } from './eventHandlers/onClickbyForm';
 import { onMarginButtonClick } from './eventHandlers/onMarginButtonClick';
 import { onCloseModalButton } from './eventHandlers/onCloseModalButton';
+import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
 refs.form.addEventListener('focusin', onFocusIn);
+refs.form.addEventListener('keydown', onKeyDownByForm);
 refs.addButton.addEventListener('click', onAddButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.closeModalButton.addEventListener('click', onCloseModalButton);
+
+console.log(window.screen.availWidth);
 
 startCheck();
 

@@ -6,14 +6,14 @@ import { onRemoveButtonClick } from './onRemoveButtonClick';
 import { setStatusOfSumbitButton } from '../valadateData/setStatusOfSumbitButton';
 
 export function onAddButtonClick() {
-  const numberOfOrdersComplects = document.querySelectorAll('.form-group').length;
+  const numberOfOrdersComplects = document.querySelectorAll('.form-group').length + 1;
   const newFormGroup = document.createElement('div');
   newFormGroup.classList.add('form-group');
   const formID = getNextCurrentID();
   console.log(formID);
   newFormGroup.dataset.form = `${formID}`;
 
-  const markup = newInputForm({ formID });
+  const markup = newInputForm({ formID, numberOfOrdersComplects });
 
   newFormGroup.innerHTML = markup;
   refs.form.lastElementChild.insertAdjacentElement('beforebegin', newFormGroup);
