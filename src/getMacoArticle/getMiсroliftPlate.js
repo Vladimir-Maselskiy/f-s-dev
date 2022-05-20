@@ -1,5 +1,5 @@
-import { maco } from '../../maco.json';
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
   if (
@@ -9,7 +9,7 @@ export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'right'
   ) {
-    addArticleToOrderList(maco.find(element => element.article === 356966));
+    addArticleToOrderList(findElementsByArticle(356966));
     return;
   }
   if (
@@ -19,14 +19,14 @@ export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'left'
   ) {
-    addArticleToOrderList(maco.find(element => element.article === 356967));
+    addArticleToOrderList(findElementsByArticle(356967));
     return;
   }
   if (systemOfPVC === '9' && sideOfHinge === 'right') {
-    addArticleToOrderList(maco.find(element => element.article === 358680));
+    addArticleToOrderList(findElementsByArticle(358680));
   }
   if (systemOfPVC === '9' && sideOfHinge === 'left') {
-    addArticleToOrderList(maco.find(element => element.article === 358681));
+    addArticleToOrderList(findElementsByArticle(358681));
     return;
   }
 }

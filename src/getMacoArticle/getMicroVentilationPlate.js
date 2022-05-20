@@ -1,5 +1,5 @@
-import { maco } from '../../maco.json';
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getMicroVentilationPlate(systemOfPVC) {
   if (
@@ -8,10 +8,10 @@ export function getMicroVentilationPlate(systemOfPVC) {
     systemOfPVC === 'Rehau' ||
     systemOfPVC === 'Veka'
   ) {
-    addArticleToOrderList(maco.find(element => element.article === 25816));
+    addArticleToOrderList(findElementsByArticle(25816));
   }
 
   if (systemOfPVC === '9') {
-    addArticleToOrderList(maco.find(element => element.article === 25850));
+    addArticleToOrderList(findElementsByArticle(25850));
   }
 }

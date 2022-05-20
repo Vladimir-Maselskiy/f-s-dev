@@ -1,7 +1,6 @@
-import { maco } from '../../maco.json';
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getBottomHinge() {
-  addArticleToOrderList(maco.find(element => element.article === 52478));
-  addArticleToOrderList(maco.find(element => element.article === 52483));
+  addArticleToOrderList(findElementsByArticle(52478, 52483));
 }

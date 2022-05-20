@@ -1,5 +1,5 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { maco } from '../../maco.json';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getExtension(length) {
   let customLenght = length;
@@ -7,17 +7,17 @@ export function getExtension(length) {
   while (customLenght > 0) {
     console.log(customLenght);
     if (customLenght >= 270) {
-      addArticleToOrderList(maco.find(element => element.article === 215272));
+      addArticleToOrderList(findElementsByArticle(215272));
       customLenght -= 470;
       continue;
     }
     if (customLenght > 141) {
-      addArticleToOrderList(maco.find(element => element.article === 214711));
+      addArticleToOrderList(findElementsByArticle(214711));
       customLenght -= 235;
       continue;
     }
     if (customLenght > 0) {
-      addArticleToOrderList(maco.find(element => element.article === 206630));
+      addArticleToOrderList(findElementsByArticle(206630));
       customLenght -= 140;
     }
   }

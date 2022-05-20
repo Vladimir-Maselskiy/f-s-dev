@@ -1,8 +1,6 @@
-import { maco } from '../../maco.json';
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getBottomDecor() {
-  addArticleToOrderList(maco.find(element => element.article === 42087));
-  addArticleToOrderList(maco.find(element => element.article === 41742));
-  addArticleToOrderList(maco.find(element => element.article === 41743));
+  addArticleToOrderList(findElementsByArticle(42087, 41742, 41743));
 }

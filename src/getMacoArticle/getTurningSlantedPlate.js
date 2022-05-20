@@ -1,5 +1,5 @@
-import { maco } from '../../maco.json';
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from './findElementsByArticle';
 
 export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
   if (
@@ -9,7 +9,7 @@ export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'right'
   ) {
-    addArticleToOrderList(maco.find(element => element.article === 33460));
+    addArticleToOrderList(findElementsByArticle(33460));
     return;
   }
   if (
@@ -19,14 +19,14 @@ export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'left'
   ) {
-    addArticleToOrderList(maco.find(element => element.article === 33461));
+    addArticleToOrderList(findElementsByArticle(33461));
     return;
   }
   if (systemOfPVC === '9' && sideOfHinge === 'right') {
-    addArticleToOrderList(maco.find(element => element.article === 33322));
+    addArticleToOrderList(findElementsByArticle(33322));
   }
   if (systemOfPVC === '9' && sideOfHinge === 'left') {
-    addArticleToOrderList(maco.find(element => element.article === 33323));
+    addArticleToOrderList(findElementsByArticle(33323));
     return;
   }
 }
