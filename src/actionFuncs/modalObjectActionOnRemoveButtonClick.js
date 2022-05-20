@@ -5,5 +5,4 @@ export function modalObjectActionOnRemoveButtonClick(Id) {
   if (obj) {
     modalOptionsDeleteObject(obj);
   }
-  console.log(modalOptions);
 }

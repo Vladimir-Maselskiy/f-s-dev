@@ -10,15 +10,13 @@ export function onAddButtonClick() {
   const newFormGroup = document.createElement('div');
   newFormGroup.classList.add('form-group');
   const formID = getNextCurrentID();
-  console.log(formID);
   newFormGroup.dataset.form = `${formID}`;
 
   const markup = newInputForm({ formID, numberOfOrdersComplects });
 
   newFormGroup.innerHTML = markup;
   refs.form.lastElementChild.insertAdjacentElement('beforebegin', newFormGroup);
-  // document.querySelector('.button-icon-svg use').href = '/symbol-defs.svg#icon-cogs';
-  console.log(newFormGroup);
+
   newFormGroup
     .querySelector('[data-action="options"]')
     .addEventListener('click', onOptionButtonClick);

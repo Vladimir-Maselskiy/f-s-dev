@@ -24,8 +24,6 @@ refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.closeModalButton.addEventListener('click', onCloseModalButton);
 
-console.log(window.screen.availWidth);
-
 startCheck();
 
 function onSubmit(event) {
