@@ -3,9 +3,9 @@ import { refs } from '../refs';
 import { modalOptions } from '../variables/variables';
 import { openedModalID } from './onOptionButtonClick';
 
-export function onSubmitModalButton() {
+export function onSubmitModalButton(event) {
+  event.preventDefault();
   makeModalOptionObjectOnCloseModal(openedModalID);
-  console.log(modalOptions);
   refs.modalBlock.classList.add('is-hidden');
   refs.bodyRef.classList.remove('modal-open');
 }

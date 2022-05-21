@@ -7,7 +7,6 @@ export let openedModalID = null;
 
 export function onOptionButtonClick(event) {
   const currentID = getCurrentIDByOptionButtonClick(event);
-  console.log(currentID);
   openedModalID = currentID;
   modalObjectActionOnOpenModal(currentID);
 

@@ -57,6 +57,10 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+svg {
+  pointer-events: none;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;

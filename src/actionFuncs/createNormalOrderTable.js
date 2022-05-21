@@ -43,7 +43,7 @@ export function createNormalOrderTable(order) {
   </tfoot>
   `;
   markup += valueOfOrderMarkup + `</tbody>`;
-  console.log(i);
+
   i = 1;
 
   return markup;

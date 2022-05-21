@@ -13,6 +13,7 @@ import { onClickbyForm } from './eventHandlers/onClickbyForm';
 import { onMarginButtonClick } from './eventHandlers/onMarginButtonClick';
 import { onSubmitModalButton } from './eventHandlers/onSubmitModalButton';
 import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
+import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
@@ -38,4 +39,5 @@ function onSubmit(event) {
 
   makeOrderSet();
   refs.addButton.style.display = 'none';
+  makeScrollToBottom();
 }
