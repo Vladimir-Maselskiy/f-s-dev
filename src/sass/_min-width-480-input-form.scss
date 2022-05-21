@@ -194,7 +194,8 @@
     padding-right: 40px;
   }
 
-  .add-button {
+  .add-button,
+  .new-order-button {
     position: relative;
     display: block;
 
@@ -210,7 +211,8 @@
     }
   }
 
-  .add-button:active {
+  .add-button:active,
+  .new-order-button:active {
     background: $accent-color-activ;
     border: $accent-color-activ 1px solid;
     top: 2px;

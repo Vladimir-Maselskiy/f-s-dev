@@ -12,6 +12,7 @@ export const refs = {
   removeButton: document.querySelector('[data-action="remote"]'),
   optionButton: document.querySelector('[data-option="1"]'),
   tableContainerRef: document.querySelector('.table-container'),
+  newOrderButtonRef: document.querySelector('.new-order-button'),
 
   // modalRefs
   submitModalButton: document.querySelector('.modal__submit-button'),
