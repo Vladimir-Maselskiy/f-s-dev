@@ -1,4 +1,8 @@
+import { makeTotalOrderValue } from '../calcFuncs/getTotalOrderValue';
+import { getTotalPriceCoefficient } from '../calcFuncs/getTotalPriceCoefficient';
 import { numberAfterDecimalPoint } from '../const';
+
+let i = 1;
 
 export function createNormalOrderTable(order) {
   let markup = `
@@ -6,7 +10,7 @@ export function createNormalOrderTable(order) {
     <tr>
       <th>Поз.</th>
       <th>Артикул</th>
-      <th>Назва</th>
+      <th class="hidden-before-678px">Назва</th>
       <th>Кількість</th>
       <th>Ціна</th>
       <th>Сума</th>
@@ -20,9 +24,8 @@ export function createNormalOrderTable(order) {
     <tr>
       <td>${i}</td>
       <td>${article}</td>
-      <td>${name}</td>
+      <td class="hidden-before-678px">${name}</td>
       <td>${quantity}</td>
-      
       <td>${(price * getTotalPriceCoefficient()).toFixed(numberAfterDecimalPoint)}</td>
       <td>${(price * quantity * getTotalPriceCoefficient()).toFixed(numberAfterDecimalPoint)}</td>
     </tr>
@@ -32,13 +35,15 @@ export function createNormalOrderTable(order) {
   });
   const valueOfOrderMarkup = `
   <tfoot>
-  <tr>
-      <td colspan="5" class ="total-value">Разом:</td>
-      <td >${makeTotalOrderValue(order).toFixed(numberAfterDecimalPoint)}</td>
+    <tr>
+      <td colspan="6" class ="total-value">Разом:${makeTotalOrderValue(order).toFixed(
+        numberAfterDecimalPoint,
+      )}</td>
     </tr>
-    </tfoot>
+  </tfoot>
   `;
   markup += valueOfOrderMarkup + `</tbody>`;
+  console.log(i);
   i = 1;
 
   return markup;

@@ -8,11 +8,11 @@ import { createNormalOrderTable } from './createNormalOrderTable';
 export function makeRenderOrder(order) {
   const screenExtansion = window.screen.availWidth;
   let markup = '';
-  if (screenExtansion < 400) {
-    markup = createSmallOrderTable(order);
-  }
+  // if (screenExtansion < 768) {
+  //   markup = createSmallOrderTable(order);
+  // }
 
-  if (screenExtansion > 400) {
+  if (screenExtansion >= 320) {
     markup = createNormalOrderTable(order);
   }
 

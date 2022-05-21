@@ -24,6 +24,8 @@ refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.closeModalButton.addEventListener('click', onCloseModalButton);
 
+// refs.currencyRate.value = window.screen.availWidth;
+
 startCheck();
 
 function onSubmit(event) {
