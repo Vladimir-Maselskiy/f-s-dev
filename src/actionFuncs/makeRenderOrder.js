@@ -21,5 +21,6 @@ export function makeRenderOrder(order) {
 
   refs.table = document.createElement('table');
   refs.table.innerHTML = markup;
-  refs.form.insertAdjacentElement('afterend', refs.table);
+  refs.tableContainerRef.insertAdjacentElement('afterbegin', refs.table);
+  refs.tableContainerRef.classList.remove('hidden');
 }

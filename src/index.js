@@ -11,7 +11,7 @@ import { startCheck } from './valadateData/startCheck';
 import { resetValidStatusOfClasses } from './valadateData/resetValidStatusOfClasses';
 import { onClickbyForm } from './eventHandlers/onClickbyForm';
 import { onMarginButtonClick } from './eventHandlers/onMarginButtonClick';
-import { onCloseModalButton } from './eventHandlers/onCloseModalButton';
+import { onSubmitModalButton } from './eventHandlers/onSubmitModalButton';
 import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 
 refs.form.addEventListener('submit', onSubmit);
@@ -22,7 +22,7 @@ refs.addButton.addEventListener('click', onAddButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
-refs.closeModalButton.addEventListener('click', onCloseModalButton);
+refs.submitModalButton.addEventListener('click', onSubmitModalButton);
 
 // refs.currencyRate.value = window.screen.availWidth;
 

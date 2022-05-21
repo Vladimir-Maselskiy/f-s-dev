@@ -36,20 +36,20 @@
       <section class="input-data-section">
         <form>
           <div class="form-group .container" data-form="1">
-              <div class="form-group__input-field">
-                <div class="form-counter">1</div>
-                <div class="width-height-quantity-block">
-                  <label class="label"
-                    >Ширина
-                    <input type="number" class="size-input" data-input="width" />
-                  </label>
-                  <label
-                    >Висота
-                    <input type="number" class="size-input" data-input="height" />
-                  </label>
-                  <div id="counter" class="counter-block">
-                    <p>Кількість</p>
-                    <div class="counter">
+            <div class="form-group__input-field">
+              <div class="form-counter">1</div>
+              <div class="width-height-quantity-block">
+                <label class="label"
+                  >Ширина
+                  <input type="number" class="size-input" data-input="width" />
+                </label>
+                <label
+                  >Висота
+                  <input type="number" class="size-input" data-input="height" />
+                </label>
+                <div id="counter" class="counter-block">
+                  <p>Кількість</p>
+                  <div class="counter">
                     <button type="button" data-action="decrement">
                       <svg class="counter-button__icon" data-action="decrement">
                         <use href="./symbol-defs.svg#icon-minus" data-action="decrement"></use>
@@ -58,74 +58,86 @@
                     <span data-value="value" class="counter-value">1</span>
                     <button type="button" data-action="increment">
                       <svg class="counter-button__icon" data-action="increment">
-                        <use class="counter-button_icon__icon" href="./symbol-defs.svg#icon-plus" data-action="increment"></use>
+                        <use
+                          class="counter-button_icon__icon"
+                          href="./symbol-defs.svg#icon-plus"
+                          data-action="increment"
+                        ></use>
                       </svg>
                     </button>
                   </div>
-                  </div>
-                </div>
-                <div class="required-option">
-                  <div class="side-of-hinge-radio-block">
-                    <p class="side-of-hinge-radio-block__label">Сторона петель:</p>
-                    <label>
-                      <input
-                        type="radio"
-                        name="side-of-hinge-1"
-                        class="side-of-hinge-css"
-                        value="left"
-                      />
-                      Ліворуч
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="side-of-hinge-1"
-                        class="side-of-hinge-css"
-                        value="right"
-                        checked
-                      />
-                      Праворуч
-                    </label>
-                  </div>
-                  <div class="system-of-pvc-block">
-                    <label for="size">Профільна система</label>
-                    <select class="select-block">
-                      <option value="13" name="system-of-pvc" selected>13-та серія</option>
-                      <option value="9" name="system-of-pvc">9-та серія</option>
-                      <option value="Salamander" name="system-of-pvc">Salamander(13)</option>
-                      <option value="Rehau" name="system-of-pvc">Rehau(13)</option>
-                      <option value="Veka" name="system-of-pvc">Veka(13)</option>
-                    </select>
-                  </div>
                 </div>
               </div>
-              <div class="remove-option-button-block">
-                <button type="button" data-option="1" class="button-icon option-button" data-action="options" disabled>
-                  <svg class="button-icon-svg">
-                    <use href="/symbol-defs.svg#icon-cogs"></use>
-                  </svg>
-                </button>
-                <button type="button" class="button-icon remote-button" data-action="remote">
-                  <svg class="button-icon-svg">
-                    <use href="/symbol-defs.svg#icon-bin"></use>
-                  </svg>
-                </button>
+              <div class="required-option">
+                <div class="side-of-hinge-radio-block">
+                  <p class="side-of-hinge-radio-block__label">Сторона петель:</p>
+                  <label>
+                    <input
+                      type="radio"
+                      name="side-of-hinge-1"
+                      class="side-of-hinge-css"
+                      value="left"
+                    />
+                    Ліворуч
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="side-of-hinge-1"
+                      class="side-of-hinge-css"
+                      value="right"
+                      checked
+                    />
+                    Праворуч
+                  </label>
+                </div>
+                <div class="system-of-pvc-block">
+                  <label for="size">Профільна система</label>
+                  <select class="select-block">
+                    <option value="13" name="system-of-pvc" selected>13-та серія</option>
+                    <option value="9" name="system-of-pvc">9-та серія</option>
+                    <option value="Salamander" name="system-of-pvc">Salamander(13)</option>
+                    <option value="Rehau" name="system-of-pvc">Rehau(13)</option>
+                    <option value="Veka" name="system-of-pvc">Veka(13)</option>
+                  </select>
+                </div>
               </div>
             </div>
-        
-            
-          <button type="submit" class="button order-count-button" disabled>Порахувать
+            <div class="remove-option-button-block">
+              <button
+                type="button"
+                data-option="1"
+                class="button-icon option-button"
+                data-action="options"
+                disabled
+              >
+                <svg class="button-icon-svg">
+                  <use href="/symbol-defs.svg#icon-cogs"></use>
+                </svg>
+              </button>
+              <button type="button" class="button-icon remote-button" data-action="remote">
+                <svg class="button-icon-svg">
+                  <use href="/symbol-defs.svg#icon-bin"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="button order-count-button" disabled>
+            Порахувать
             <div class="icon-block">
-              <svg class="add-button-svg__icon" >
+              <svg class="add-button-svg__icon">
                 <use href="/symbol-defs.svg#icon-calculator"></use>
               </svg>
             </div>
           </button>
         </form>
+        <div class="table-container hidden"></div>
         <div class="container">
-          <button type="button" class="button add-button">Додати
+          <button type="button" class="button add-button">
+            Додати
             <div class="icon-block">
-              <svg class="add-button-svg__icon" >
+              <svg class="add-button-svg__icon">
                 <use href="./symbol-defs.svg#icon-plus"></use>
               </svg>
             </div>
@@ -149,29 +161,35 @@
         <div class="size-input-modal-block">
           <label
             >Ширина
-            <input type="input" class="size-input-modal" data-input="width" />
+            <input type="input" class="size-input-modal" data-input="width" disabled />
           </label>
           <label
             >Висота
-            <input type="input" class="size-input-modal" data-input="height" />
+            <input type="input" class="size-input-modal" data-input="height" disabled />
           </label>
         </div>
 
         <div class="optional-settings-block">
           <form action="#" class="modal-form">
-          <label
-            >Висота від низу до ручки
-            <input type="input" class="size-input-modal" data-input="handle-distance" />
-          </label>
-          <label>
-            Зимове провітрювання
-            <input type="checkbox" class="micro-ventilation-modal" name="micro-ventilation" value="micro-ventilation" checked />
-          </label>
+            <label
+              >Висота від низу до ручки
+              <input type="number" class="size-input-modal" data-input="handle-distance" />
+            </label>
+            <label>
+              Зимове провітрювання
+              <input
+                type="checkbox"
+                class="micro-ventilation-modal"
+                name="micro-ventilation"
+                value="micro-ventilation"
+                checked
+              />
+            </label>
+            <button type="submit" class="modal__submit-button">
+              <span class="form__submit-title">Застосувати</span>
+            </button>
+          </form>
         </div>
-          <button type="submit" class="modal__submit-button">
-            <span class="form__submit-title">Застосувати</span>
-          </button>
-        </form>
       </div>
     </div>
 

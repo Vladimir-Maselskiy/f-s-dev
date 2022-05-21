@@ -1,10 +1,20 @@
 /* spacing */
 
+.table-container {
+  margin-top: 30px;
+  padding: 5px 0;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+}
+
+.table-container.hidden {
+  display: none;
+}
+
 table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  border: 3px solid $accent-color;
 }
 
 thead th {
@@ -72,5 +82,7 @@ table {
 }
 
 .total-value {
+  padding-top: 10px;
   text-align: right;
+  vertical-align: bottom;
 }

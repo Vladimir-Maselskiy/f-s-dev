@@ -1,4 +1,5 @@
 export const refs = {
+  bodyRef: document.querySelector('body'),
   currencyRate: document.querySelector('[data-currency-rate="currency-rate"]'),
   form: document.querySelector('form'),
   formGroup: document.querySelector('.form-group'),
@@ -10,9 +11,10 @@ export const refs = {
   addButton: document.querySelector('.add-button'),
   removeButton: document.querySelector('[data-action="remote"]'),
   optionButton: document.querySelector('[data-option="1"]'),
+  tableContainerRef: document.querySelector('.table-container'),
 
   // modalRefs
-  closeModalButton: document.querySelector('.modal__submit-button'),
+  submitModalButton: document.querySelector('.modal__submit-button'),
   widthInModalInput: document.querySelector('.size-input-modal[data-input="width"]'),
   heightInModalInputRef: document.querySelector('.size-input-modal[data-input="height"]'),
   handleDistanceInModal: document.querySelector('.size-input-modal[data-input="handle-distance"]'),
