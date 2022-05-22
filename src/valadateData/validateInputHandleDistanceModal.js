@@ -2,8 +2,7 @@ import Notiflix from 'notiflix';
 import { getMinAndMaxHandleDistanceInModal } from '../calcFuncs/getMinAndMaxHandleDistanceInModal';
 import { refs } from '../refs';
 
-export function validateInputHandleDistanceModal(event) {
-  console.log(event.keyCode);
+export function validateInputHandleDistanceModal() {
   let handleHeight = null;
   if (!(refs.handleDistanceInModal.value === '')) {
     handleHeight = Number(refs.handleDistanceInModal.value);

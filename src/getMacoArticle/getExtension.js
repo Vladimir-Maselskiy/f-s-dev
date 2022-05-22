@@ -5,7 +5,6 @@ export function getExtension(length) {
   let customLenght = length;
 
   while (customLenght > 0) {
-    console.log(customLenght);
     if (customLenght >= 270) {
       addArticleToOrderList(findElementsByArticle(215272));
       customLenght -= 470;
