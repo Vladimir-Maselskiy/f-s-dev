@@ -7,7 +7,7 @@ export function onSubmitModalButton(event) {
   makeModalOptionObjectOnCloseModal(openedModalID);
   refs.modalBlock.classList.add('hidden');
   refs.bodyRef.classList.remove('modal-open');
-  setTimeout(() => {
-    refs.modalFormRef.reset();
-  }, 250);
+  // setTimeout(() => {
+  //   refs.modalFormRef.reset();
+  // }, 250);
 }
