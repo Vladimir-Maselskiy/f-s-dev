@@ -11,6 +11,10 @@ export function getGetriebe(options) {
   }
   let cutGetriebeLength = null;
 
+  if (height >= 470 && height < 800) {
+    addArticleToOrderList(findElementsByArticle(201746, 213287, 213287));
+    cutGetriebeLength = 1250;
+  }
   if (height >= 800 && height < 1250) {
     addArticleToOrderList(findElementsByArticle(212156));
     cutGetriebeLength = 1250;

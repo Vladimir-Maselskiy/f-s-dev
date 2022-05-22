@@ -41,5 +41,6 @@ function onSubmit(event) {
 
   makeOrderSet();
   refs.addButton.style.display = 'none';
+  window.navigator.vibrate([100, 50, 100]);
   makeScrollToBottom();
 }

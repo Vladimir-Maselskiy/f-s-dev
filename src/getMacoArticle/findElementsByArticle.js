@@ -6,5 +6,7 @@ export function findElementsByArticle(...articles) {
     return [maco.find(element => element.article === articles[0])];
   }
 
-  return maco.filter(element => articles.includes(element.article));
+  const articleArray = [];
+  articles.forEach(article => articleArray.push(maco.find(element => element.article === article)));
+  return articleArray;
 }

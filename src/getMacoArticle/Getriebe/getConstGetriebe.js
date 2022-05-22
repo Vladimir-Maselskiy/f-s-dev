@@ -4,7 +4,13 @@ import { getExtension } from '../getExtension';
 
 export function getConstGetriebe(height, hanleDistance) {
   let cutGetriebeLength = null;
-  if (hanleDistance >= 400 && hanleDistance <= 625) {
+
+  if (hanleDistance >= 235 && hanleDistance <= 400) {
+    addArticleToOrderList(findElementsByArticle(201746, 213287, 213287));
+    cutGetriebeLength = hanleDistance + 400;
+  }
+
+  if (hanleDistance > 400 && hanleDistance <= 625) {
     addArticleToOrderList(findElementsByArticle(212156));
     cutGetriebeLength = hanleDistance + 625;
   }

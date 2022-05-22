@@ -1,7 +1,7 @@
 export const sizeRestrictions = {
   minWidth: 400,
   maxWidth: 1300,
-  minHeight: 800,
+  minHeight: 470,
   maxHeight: 2400,
 };
 

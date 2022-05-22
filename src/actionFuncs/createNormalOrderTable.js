@@ -36,7 +36,7 @@ export function createNormalOrderTable(order) {
   const valueOfOrderMarkup = `
   <tfoot>
     <tr>
-      <td colspan="6" class ="total-value">Разом:${makeTotalOrderValue(order).toFixed(
+      <td colspan="6" class ="total-value">Разом: ${makeTotalOrderValue(order).toFixed(
         numberAfterDecimalPoint,
       )}</td>
     </tr>
