@@ -14,11 +14,11 @@ export function getConstGetriebe(height, hanleDistance) {
     addArticleToOrderList(findElementsByArticle(212156));
     cutGetriebeLength = hanleDistance + 625;
   }
-  if (hanleDistance > 625 && hanleDistance <= 675) {
-    addArticleToOrderList(findElementsByArticle(225098));
-    cutGetriebeLength = hanleDistance + 675;
-  }
-  if (hanleDistance > 675 && hanleDistance <= 875) {
+  // if (hanleDistance > 625 && hanleDistance <= 675) {
+  //   addArticleToOrderList(findElementsByArticle(225098));
+  //   cutGetriebeLength = hanleDistance + 675;
+  // }
+  if (hanleDistance > 625 && hanleDistance <= 875) {
     addArticleToOrderList(findElementsByArticle(212158));
     cutGetriebeLength = hanleDistance + 875;
   }

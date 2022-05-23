@@ -19,11 +19,11 @@ export function getGetriebe(options) {
     addArticleToOrderList(findElementsByArticle(212156));
     cutGetriebeLength = 1250;
   }
-  if (height >= 1250 && height < 1350) {
-    addArticleToOrderList(findElementsByArticle(225098));
-    cutGetriebeLength = 1350;
-  }
-  if (height >= 1350 && height < 1750) {
+  // if (height >= 1250 && height < 1350) {
+  //   addArticleToOrderList(findElementsByArticle(225098));
+  //   cutGetriebeLength = 1350;
+  // }
+  if (height >= 1250 && height < 1750) {
     addArticleToOrderList(findElementsByArticle(212158));
     cutGetriebeLength = 1750;
   }
