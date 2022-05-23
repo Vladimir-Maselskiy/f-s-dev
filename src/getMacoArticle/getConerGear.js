@@ -4,10 +4,10 @@ import { getMicroVentilationPlate } from './getMicroVentilationPlate';
 
 export function getConerGear({ systemOfPVC, microVentilation = true }) {
   if (microVentilation) {
-    addArticleToOrderList(findElementsByArticle(228430));
+    addArticleToOrderList(findElementsByArticle(228430), 2);
     getMicroVentilationPlate(systemOfPVC);
     return;
   }
 
-  addArticleToOrderList(findElementsByArticle(211974));
+  addArticleToOrderList(findElementsByArticle(211974), 2);
 }

@@ -8,10 +8,10 @@ export function getMicroVentilationPlate(systemOfPVC) {
     systemOfPVC === 'Rehau' ||
     systemOfPVC === 'Veka'
   ) {
-    addArticleToOrderList(findElementsByArticle(25816));
+    addArticleToOrderList(findElementsByArticle(25816), 3);
   }
 
   if (systemOfPVC === '9') {
-    addArticleToOrderList(findElementsByArticle(25850));
+    addArticleToOrderList(findElementsByArticle(25850), 3);
   }
 }

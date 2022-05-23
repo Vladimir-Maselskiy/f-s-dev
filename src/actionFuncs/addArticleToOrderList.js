@@ -1,9 +1,10 @@
 export let orderList = [];
 export let singleOrder = [];
 
-export function addArticleToOrderList(articles) {
+export function addArticleToOrderList(articles, articleGroupID) {
   articles.forEach(article => {
     const newArticle = JSON.parse(JSON.stringify(article));
+    newArticle.articleGroupID = articleGroupID;
     if (!newArticle.quantity) newArticle.quantity = 1;
     singleOrder.push(newArticle);
     const index = orderList.findIndex(item => item.id === newArticle.id);

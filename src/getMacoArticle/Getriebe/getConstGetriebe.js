@@ -6,24 +6,24 @@ export function getConstGetriebe(height, hanleDistance) {
   let cutGetriebeLength = null;
 
   if (hanleDistance >= 235 && hanleDistance <= 400) {
-    addArticleToOrderList(findElementsByArticle(201746, 213287, 213287));
+    addArticleToOrderList(findElementsByArticle(201746, 213287, 213287), 3);
     cutGetriebeLength = hanleDistance + 400;
   }
 
   if (hanleDistance > 400 && hanleDistance <= 625) {
-    addArticleToOrderList(findElementsByArticle(212156));
+    addArticleToOrderList(findElementsByArticle(212156), 3);
     cutGetriebeLength = hanleDistance + 625;
   }
   // if (hanleDistance > 625 && hanleDistance <= 675) {
-  //   addArticleToOrderList(findElementsByArticle(225098));
+  //   addArticleToOrderList(findElementsByArticle(225098), 3);
   //   cutGetriebeLength = hanleDistance + 675;
   // }
   if (hanleDistance > 625 && hanleDistance <= 875) {
-    addArticleToOrderList(findElementsByArticle(212158));
+    addArticleToOrderList(findElementsByArticle(212158), 3);
     cutGetriebeLength = hanleDistance + 875;
   }
   if (hanleDistance > 875 && hanleDistance <= 1125) {
-    addArticleToOrderList(findElementsByArticle(212160));
+    addArticleToOrderList(findElementsByArticle(212160), 3);
     cutGetriebeLength = hanleDistance + 1125;
   }
 

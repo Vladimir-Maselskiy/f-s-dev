@@ -9,7 +9,7 @@ export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'right'
   ) {
-    addArticleToOrderList(findElementsByArticle(356966));
+    addArticleToOrderList(findElementsByArticle(356966), 9);
     return;
   }
   if (
@@ -19,14 +19,14 @@ export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'left'
   ) {
-    addArticleToOrderList(findElementsByArticle(356967));
+    addArticleToOrderList(findElementsByArticle(356967), 9);
     return;
   }
   if (systemOfPVC === '9' && sideOfHinge === 'right') {
-    addArticleToOrderList(findElementsByArticle(358680));
+    addArticleToOrderList(findElementsByArticle(358680), 9);
   }
   if (systemOfPVC === '9' && sideOfHinge === 'left') {
-    addArticleToOrderList(findElementsByArticle(358681));
+    addArticleToOrderList(findElementsByArticle(358681), 9);
     return;
   }
 }

@@ -12,28 +12,28 @@ export function getStrikeplates({ systemOfPVC } = options) {
     const strikePlates = findElementsByArticle(34824);
     const copyStrikePlates = getCopy(strikePlates);
     copyStrikePlates[0].quantity = quantityOfPlates;
-    addArticleToOrderList(copyStrikePlates);
+    addArticleToOrderList(copyStrikePlates, 10);
     return;
   }
   if (systemOfPVC === 'Rehau') {
     const strikePlates = findElementsByArticle(354970);
     const copyStrikePlates = getCopy(strikePlates);
     copyStrikePlates[0].quantity = quantityOfPlates;
-    addArticleToOrderList(copyStrikePlates);
+    addArticleToOrderList(copyStrikePlates, 10);
     return;
   }
   if (systemOfPVC === 'Veka') {
     const strikePlates = findElementsByArticle(34283);
     const copyStrikePlates = getCopy(strikePlates);
     copyStrikePlates[0].quantity = quantityOfPlates;
-    addArticleToOrderList(copyStrikePlates);
+    addArticleToOrderList(copyStrikePlates, 10);
     return;
   }
   if (systemOfPVC === '9') {
     const strikePlates = findElementsByArticle(34850);
     const copyStrikePlates = getCopy(strikePlates);
     copyStrikePlates[0].quantity = quantityOfPlates;
-    addArticleToOrderList(copyStrikePlates);
+    addArticleToOrderList(copyStrikePlates, 10);
     return;
   }
 }

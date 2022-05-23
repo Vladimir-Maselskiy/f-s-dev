@@ -37,5 +37,6 @@ export function makeOrderSet() {
 
     makeSingleSet(options);
   });
+
   makeRenderOrder(orderList);
 }

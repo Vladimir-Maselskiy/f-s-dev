@@ -9,7 +9,7 @@ export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'right'
   ) {
-    addArticleToOrderList(findElementsByArticle(33460));
+    addArticleToOrderList(findElementsByArticle(33460), 8);
     return;
   }
   if (
@@ -19,14 +19,14 @@ export function getTurningSlantedPlate({ systemOfPVC, sideOfHinge } = options) {
       systemOfPVC === 'Veka') &&
     sideOfHinge === 'left'
   ) {
-    addArticleToOrderList(findElementsByArticle(33461));
+    addArticleToOrderList(findElementsByArticle(33461), 8);
     return;
   }
   if (systemOfPVC === '9' && sideOfHinge === 'right') {
-    addArticleToOrderList(findElementsByArticle(33322));
+    addArticleToOrderList(findElementsByArticle(33322), 8);
   }
   if (systemOfPVC === '9' && sideOfHinge === 'left') {
-    addArticleToOrderList(findElementsByArticle(33323));
+    addArticleToOrderList(findElementsByArticle(33323), 8);
     return;
   }
 }

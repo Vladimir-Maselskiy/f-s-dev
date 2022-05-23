@@ -15,6 +15,7 @@ import { onSubmitModalButton } from './eventHandlers/onSubmitModalButton';
 import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 import { onNewOrderButtonClick } from './eventHandlers/onNewOrderButtonClick';
+import { orderList } from './actionFuncs/addArticleToOrderList';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
