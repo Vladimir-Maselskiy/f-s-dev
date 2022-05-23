@@ -7,23 +7,6 @@
   background-color: $accent-color;
   border-radius: 30px;
   padding-right: 40px;
-  &:hover {
-    background: $accent-color-hover;
-    border: $accent-color-hover 1px solid;
-  }
-  &:active {
-    background-color: $accent-color-activ;
-  }
-
-  &:disabled {
-    background: $accent-color-disabled;
-    border: $accent-color-disabled 1px solid;
-
-    & .button-svg__icon {
-      fill: $accent-color-disabled;
-    }
-  }
-
   & .button-svg__icon {
     fill: $accent-color-hover;
   }
@@ -37,6 +20,29 @@
     left: 50%;
     fill: $accent-color;
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: $accent-color-hover;
+    border: $accent-color-hover 1px solid;
+    & svg {
+      fill: $accent-color-hover;
+    }
+  }
+  &:active {
+    background-color: $accent-color-activ;
+    & svg {
+      fill: $accent-color-activ;
+    }
+  }
+
+  &:disabled {
+    background: $accent-color-disabled;
+    border: $accent-color-disabled 1px solid;
+
+    & svg {
+      fill: $accent-color-disabled;
+    }
   }
 }
 
