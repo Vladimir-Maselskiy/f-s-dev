@@ -2,13 +2,16 @@ import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
 export function getCenterLocks(options) {
-  const { width, height } = options;
-  if (width > 480 && width < 800) {
-    addArticleToOrderList(findElementsByArticle(228398), 6);
+  const { width, height, gorizontalLock } = options;
+  if (gorizontalLock) {
+    if (width > 480 && width < 800) {
+      addArticleToOrderList(findElementsByArticle(228398), 6);
+    }
+    if (width >= 800 && width < 1200) {
+      addArticleToOrderList(findElementsByArticle(211924), 6);
+    }
   }
-  if (width >= 800 && width < 1200) {
-    addArticleToOrderList(findElementsByArticle(211924), 6);
-  }
+
   if (height > 480 && height < 800) {
     addArticleToOrderList(findElementsByArticle(228398), 6);
   }

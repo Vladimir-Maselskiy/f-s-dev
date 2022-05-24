@@ -20,6 +20,7 @@ export const refs = {
   heightInModalInputRef: document.querySelector('.size-input-modal[data-input="height"]'),
   handleDistanceInModal: document.querySelector('.size-input-modal[data-input="handle-distance"]'),
   microVentilationInModal: document.querySelector('.micro-ventilation-modal'),
+  gorizontalLock: document.querySelector('.bottom-horizontal-lock-modal'),
   modalFormRef: document.querySelector('.modal-form'),
   modalBlock: document.querySelector('[data-modal]'),
 };

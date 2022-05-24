@@ -33,6 +33,17 @@ export function makeOrderSet() {
         options.systemOfPVC = systemOfPVCRef.value;
       }
     }
+
+    // if (options.width >= 800) {
+    //   options.gorizontalLock = true;
+    // }
+    if (!options.gorizontalLock) {
+      if (options.width >= 800) {
+        options.gorizontalLock = true;
+      } else {
+        options.gorizontalLock = false;
+      }
+    }
     console.log('options:', options);
 
     makeSingleSet(options);

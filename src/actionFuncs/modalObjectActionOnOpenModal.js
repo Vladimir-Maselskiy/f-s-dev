@@ -1,4 +1,3 @@
-import { refs } from '../refs';
 import { modalOptions, modalOptionsPushID } from '../variables/variables';
 
 export function modalObjectActionOnOpenModal(id) {
