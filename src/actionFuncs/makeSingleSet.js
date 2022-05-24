@@ -22,9 +22,9 @@ export function makeSingleSet(options) {
     getMicroliftPlate(options);
     getTurningSlantedPlate(options);
     getTopHinge(options);
-    getBottomHinge();
+    getBottomHinge(options);
     getTopDecor();
-    getBottomDecor();
+    getBottomDecor(options);
     getStrikeplates(options);
   }
 }

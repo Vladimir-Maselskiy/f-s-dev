@@ -6,5 +6,7 @@ export function makeModalOptionObjectOnCloseModal(id) {
   modalOption.hanleDistance = Number(refs.handleDistanceInModal.value);
   modalOption.microVentilation = refs.microVentilationInModal.checked;
   modalOption.gorizontalLock = refs.gorizontalLock.checked;
+  modalOption.withoutBottomHinge = refs.withoutBottomHinge.checked;
+
   console.log(modalOption);
 }
