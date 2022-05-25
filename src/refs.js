@@ -22,6 +22,7 @@ export const refs = {
   microVentilationInModal: document.querySelector('.micro-ventilation-modal'),
   gorizontalLock: document.querySelector('.bottom-horizontal-lock-modal'),
   withoutBottomHinge: document.querySelector('.without-bottom-hinge-modal'),
+  typeOfOpening: document.querySelector('.select-type-of-opening-block'),
 
   modalFormRef: document.querySelector('.modal-form'),
   modalBlock: document.querySelector('[data-modal]'),

@@ -15,7 +15,6 @@ import { onSubmitModalButton } from './eventHandlers/onSubmitModalButton';
 import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 import { onNewOrderButtonClick } from './eventHandlers/onNewOrderButtonClick';
-import { orderList } from './actionFuncs/addArticleToOrderList';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
@@ -28,7 +27,7 @@ refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.submitModalButton.addEventListener('click', onSubmitModalButton);
 refs.newOrderButtonRef.addEventListener('click', onNewOrderButtonClick);
 
-// refs.currencyRate.value = window.screen.availWidth;
+console.log(refs.typeOfOpening);
 
 startCheck();
 

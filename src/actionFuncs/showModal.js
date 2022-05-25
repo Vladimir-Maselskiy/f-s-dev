@@ -2,6 +2,7 @@ import { onBlurOnHandleDistanceInModal } from '../eventHandlers/onBlurOnHandleDi
 import { onChangeOnHandleDistanceInModal } from '../eventHandlers/onChangeOnHandleDistanceInModal';
 import { onFocusOnHandleDistanceInModal } from '../eventHandlers/onFocusOnHandleDistanceInModal';
 import { onInputOnHandleDistanceInModal } from '../eventHandlers/onInputOnHandleDistanceInModal';
+import { onSelectTypeOfOpeningInModal } from '../eventHandlers/onSelectTypeOfOpeningInModal';
 import { refs } from '../refs';
 import { setStartDataOfModalOptions } from './setStartDataOfModalOptions/setStartDataOfModalOptions';
 
@@ -22,4 +23,5 @@ export function showModal(currentID) {
   refs.handleDistanceInModal.addEventListener('input', onInputOnHandleDistanceInModal);
   refs.handleDistanceInModal.addEventListener('change', onChangeOnHandleDistanceInModal);
   refs.handleDistanceInModal.addEventListener('blur', onBlurOnHandleDistanceInModal);
+  refs.typeOfOpening.addEventListener('change', onSelectTypeOfOpeningInModal);
 }

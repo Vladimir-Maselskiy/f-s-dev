@@ -8,8 +8,8 @@ export const sizeRestrictions = {
 export const numberAfterDecimalPoint = 2;
 
 export const clientPercentage = {
-  deilleDiscount: 0,
-  tradeMargin: 10,
+  deilleDiscount: 8,
+  tradeMargin: 23,
   setTradeMargin(newTradeMargin) {
     this.tradeMargin = newTradeMargin;
   },
