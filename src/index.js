@@ -15,19 +15,19 @@ import { onSubmitModalButton } from './eventHandlers/onSubmitModalButton';
 import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 import { onNewOrderButtonClick } from './eventHandlers/onNewOrderButtonClick';
+import { onTypeOfOpeningButtonClick } from './eventHandlers/onTypeOfOpeningButtonClick';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
 refs.form.addEventListener('focusin', onFocusIn);
 refs.form.addEventListener('keydown', onKeyDownByForm);
 refs.addButton.addEventListener('click', onAddButtonClick);
+refs.typeOfOpening.addEventListener('click', onTypeOfOpeningButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);
 refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.submitModalButton.addEventListener('click', onSubmitModalButton);
 refs.newOrderButtonRef.addEventListener('click', onNewOrderButtonClick);
-
-console.log(refs.typeOfOpening);
 
 startCheck();
 

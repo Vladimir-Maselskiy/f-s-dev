@@ -4,7 +4,7 @@ import { onFocusOnHandleDistanceInModal } from '../eventHandlers/onFocusOnHandle
 import { onInputOnHandleDistanceInModal } from '../eventHandlers/onInputOnHandleDistanceInModal';
 import { onSelectTypeOfOpeningInModal } from '../eventHandlers/onSelectTypeOfOpeningInModal';
 import { refs } from '../refs';
-import { setStartDataOfModalOptions } from './setStartDataOfModalOptions/setStartDataOfModalOptions';
+import { setStartDataOfModalOptions } from './modal/setStartDataOfModalOptions';
 
 export function showModal(currentID) {
   refs.modalFormRef.reset();

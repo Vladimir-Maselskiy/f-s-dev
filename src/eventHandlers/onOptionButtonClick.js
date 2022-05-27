@@ -1,10 +1,8 @@
-import { modalObjectActionOnOpenModal } from '../actionFuncs/modalObjectActionOnOpenModal';
+import { modalObjectActionOnOpenModal } from '../actionFuncs/modal/modalObjectActionOnOpenModal';
 import { showModal } from '../actionFuncs/showModal';
 import { getCurrentIDByOptionButtonClick } from '../calcFuncs/getCurrentIDByOptionButtonClick';
 import { refs } from '../refs';
 import { validateFormInputFields } from '../valadateData/validateFormInputFields';
-import { onBlurOnHandleDistanceInModal } from './onBlurOnHandleDistanceInModal';
-import { onFocusOnHandleDistanceInModal } from './onFocusOnHandleDistanceInModal';
 
 export let openedModalID = null;
 

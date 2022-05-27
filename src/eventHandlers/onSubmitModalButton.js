@@ -1,4 +1,4 @@
-import { makeModalOptionObjectOnCloseModal } from '../actionFuncs/makeModalOptionObjectOnCloseModal';
+import { makeModalOptionObjectOnCloseModal } from '../actionFuncs/modal/makeModalOptionObjectOnCloseModal';
 import { refs } from '../refs';
 import { openedModalID } from './onOptionButtonClick';
 

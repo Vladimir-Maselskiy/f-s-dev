@@ -9,13 +9,10 @@
     <meta property="og:title" content="Furniture systems..." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://furniture-systems-vikno-center-mobile.netlify.app/" />
-    <meta
-      property="og:image"
-      content="https://pixabay.com/get/g8e699b0b2cdd7b507a843bc9775b43f3d8f02a1d1b4bc7cff9968a8643cc6555a2e51f38feb2837836723cfedad3bebbc872caadf21a59dc5cd672d3f5c7aae0_1280.jpg"
-    />
+    <meta property="og:image" content="https://www.linkpicture.com/q/binary-gb29cc4a96_1280.jpg" />
     <meta
       property="og:image:secure_url"
-      content="https://pixabay.com/get/g8e699b0b2cdd7b507a843bc9775b43f3d8f02a1d1b4bc7cff9968a8643cc6555a2e51f38feb2837836723cfedad3bebbc872caadf21a59dc5cd672d3f5c7aae0_1280.jpg"
+      content="https://www.linkpicture.com/q/binary-gb29cc4a96_1280.jpg"
     />
 
     <title>Furniture systems</title>
@@ -124,6 +121,15 @@
             <div class="remove-option-button-block">
               <button
                 type="button"
+                class="button-icon type-of-opening"
+                data-action="open-second-modal"
+              >
+                <svg class="button-icon-svg">
+                  <use href="/symbol-defs.svg#icon-plus"></use>
+                </svg>
+              </button>
+              <button
+                type="button"
                 data-option="1"
                 class="button-icon option-button"
                 data-action="options"
@@ -141,7 +147,12 @@
             </div>
           </div>
 
-          <button type="submit" class="wide-button order-count-button" disabled>
+          <button
+            type="submit"
+            class="wide-button order-count-button"
+            data-action="form-submit"
+            disabled
+          >
             Порахувать
             <div class="icon-block">
               <svg class="wide-button-svg__icon">
@@ -249,7 +260,48 @@
               <option value="type-4" name="type-of-opening">Штульп активна</option>
               <option value="type-5" name="type-of-opening">Штульп пасивна</option>
             </select>
-            <button type="submit" class="wide-button modal__submit-button">
+            <button
+              type="submit"
+              class="wide-button modal__submit-button"
+              data-modal="modal__submit-button"
+            >
+              Застосувати
+              <div class="icon-block">
+                <svg class="wide-button-svg__icon">
+                  <use href="./symbol-defs.svg#icon-checkmark"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- typeOfOpeningModalFormRef -->
+
+    <div class="type-of-opening-modal-backdrop hidden">
+      <div class="type-of-opening-modal">
+        <button type="button" class="modal__close-button">
+          <svg class="modal__icon-close">
+            <use href="/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="type-of-opening-modal__top-text">Тип відкривання:</p>
+        <div class="type-of-opening-settings-block">
+          <form action="#2" class="type-of-opening-modal-form">
+            <label for="type-of-opening">Тип відкрівання</label>
+            <select class="select-type-of-opening-block">
+              <option value="type-1" name="type-of-opening">Поворотно-відкидна</option>
+              <option value="type-2" name="type-of-opening">Поворотна</option>
+              <option value="type-3" name="type-of-opening">Фрамуга</option>
+              <option value="type-4" name="type-of-opening">Штульп активна</option>
+              <option value="type-5" name="type-of-opening">Штульп пасивна</option>
+            </select>
+            <button
+              type="submit"
+              class="wide-button modal__submit-button"
+              data-modal="type-of-opening-modal__submit-button"
+            >
               Застосувати
               <div class="icon-block">
                 <svg class="wide-button-svg__icon">
