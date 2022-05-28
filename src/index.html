@@ -210,7 +210,11 @@
 
         <div class="optional-settings-block">
           <form action="#" class="modal-form">
-            <div class="handle-distance-modal-block" data-title="enter data">
+            <div
+              class="handle-distance-modal-block type-1 type-2 type-4 type-5"
+              data-title="enter data"
+              data-select="select"
+            >
               <label
                 >Висота від низу до ручки
                 <input
@@ -224,7 +228,7 @@
               <div class="handle-distance-modal-block__info hidden">enter data</div>
             </div>
 
-            <label>
+            <label class="type-1 type-4" data-select="select">
               Зимове провітрювання
               <input
                 type="checkbox"
@@ -234,7 +238,7 @@
                 checked
               />
             </label>
-            <label>
+            <label class="type-1 type-2 type-4 type-5" data-select="select">
               Нижній горизонтальний прижим
               <input
                 type="checkbox"
@@ -243,7 +247,7 @@
                 value="bottom-horizontal-lock"
               />
             </label>
-            <label>
+            <label class="type-1 type-2 type-4 type-5" data-select="select">
               Без нижньої петлі
               <input
                 type="checkbox"

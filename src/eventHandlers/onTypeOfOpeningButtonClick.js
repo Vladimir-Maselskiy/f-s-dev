@@ -14,8 +14,8 @@ export function onTypeOfOpeningButtonClick(event) {
   // створюєм обєкт опцій по id  якщо його немає
   modalObjectActionOnOpenModal(currentID);
 
-  //   отримуєм актуальний тип відкриття по id
-  const currentTypeOfOpening = getCurrentTypeOfOpening(currentID);
+  //   отримуєм актуальний тип відкриття на момент відкриття модалки по id
+  currentTypeOfOpening = getCurrentTypeOfOpening(currentID);
 
   showTypeOpeningModal(currentID);
 }

@@ -1,5 +1,5 @@
 import { modalObjectActionOnOpenModal } from '../actionFuncs/modal/modalObjectActionOnOpenModal';
-import { showModal } from '../actionFuncs/showModal';
+import { showModal } from '../actionFuncs/modal/showModal';
 import { getCurrentIDByOptionButtonClick } from '../calcFuncs/getCurrentIDByOptionButtonClick';
 import { refs } from '../refs';
 import { validateFormInputFields } from '../valadateData/validateFormInputFields';

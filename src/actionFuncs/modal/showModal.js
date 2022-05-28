@@ -1,10 +1,10 @@
-import { onBlurOnHandleDistanceInModal } from '../eventHandlers/onBlurOnHandleDistanceInModal';
-import { onChangeOnHandleDistanceInModal } from '../eventHandlers/onChangeOnHandleDistanceInModal';
-import { onFocusOnHandleDistanceInModal } from '../eventHandlers/onFocusOnHandleDistanceInModal';
-import { onInputOnHandleDistanceInModal } from '../eventHandlers/onInputOnHandleDistanceInModal';
-import { onSelectTypeOfOpeningInModal } from '../eventHandlers/onSelectTypeOfOpeningInModal';
-import { refs } from '../refs';
-import { setStartDataOfModalOptions } from './modal/setStartDataOfModalOptions';
+import { onBlurOnHandleDistanceInModal } from '../../eventHandlers/onBlurOnHandleDistanceInModal';
+import { onChangeOnHandleDistanceInModal } from '../../eventHandlers/onChangeOnHandleDistanceInModal';
+import { onFocusOnHandleDistanceInModal } from '../../eventHandlers/onFocusOnHandleDistanceInModal';
+import { onInputOnHandleDistanceInModal } from '../../eventHandlers/onInputOnHandleDistanceInModal';
+import { onSelectTypeOfOpeningInModal } from '../../eventHandlers/onSelectTypeOfOpeningInModal';
+import { refs } from '../../refs';
+import { setStartDataOfModalOptions } from './setStartDataOfModalOptions';
 
 export function showModal(currentID) {
   refs.modalFormRef.reset();
