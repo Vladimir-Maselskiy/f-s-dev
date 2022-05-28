@@ -4,6 +4,7 @@ import { getNextCurrentID } from '../calcFuncs/getNextCurrentID';
 import newInputForm from '../templates/newInputForm.hbs';
 import { onRemoveButtonClick } from './onRemoveButtonClick';
 import { setStatusOfSumbitButton } from '../valadateData/setStatusOfSumbitButton';
+import { onTypeOfOpeningButtonClick } from './onTypeOfOpeningButtonClick';
 
 export function onAddButtonClick() {
   const numberOfOrdersComplects = document.querySelectorAll('.form-group').length + 1;
@@ -23,5 +24,9 @@ export function onAddButtonClick() {
   newFormGroup
     .querySelector('[data-action="remote"]')
     .addEventListener('click', onRemoveButtonClick);
+
+  newFormGroup
+    .querySelector('[data-action="open-second-modal"]')
+    .addEventListener('click', onTypeOfOpeningButtonClick);
   setStatusOfSumbitButton();
 }

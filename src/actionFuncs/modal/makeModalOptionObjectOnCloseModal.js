@@ -7,6 +7,8 @@ export function makeModalOptionObjectOnCloseModal(id) {
   modalOption.microVentilation = refs.microVentilationInModal.checked;
   modalOption.gorizontalLock = refs.gorizontalLock.checked;
   modalOption.withoutBottomHinge = refs.withoutBottomHinge.checked;
-
+  if (modalOption.typeOfOpening === undefined) {
+    modalOption.typeOfOpening = 'type-1';
+  }
   console.log(modalOption);
 }
