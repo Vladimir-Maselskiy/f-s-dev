@@ -7,6 +7,7 @@ export function makeModalOptionObjectOnCloseModal(id) {
   modalOption.microVentilation = refs.microVentilationInModal.checked;
   modalOption.gorizontalLock = refs.gorizontalLock.checked;
   modalOption.withoutBottomHinge = refs.withoutBottomHinge.checked;
+  modalOption.isTurnTiltGetriebe = refs.isTurnTiltGetriebeInModal.checked;
   if (modalOption.typeOfOpening === undefined) {
     modalOption.typeOfOpening = 'type-1';
   }

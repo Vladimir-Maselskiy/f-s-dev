@@ -1,12 +1,17 @@
+import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObjectByID';
 import { onBlurOnHandleDistanceInModal } from '../../eventHandlers/onBlurOnHandleDistanceInModal';
 import { onChangeOnHandleDistanceInModal } from '../../eventHandlers/onChangeOnHandleDistanceInModal';
+import { onChangetIsTurnTiltGetriebeInModal } from '../../eventHandlers/onChangetIsTurnTiltGetriebeInModal';
 import { onFocusOnHandleDistanceInModal } from '../../eventHandlers/onFocusOnHandleDistanceInModal';
 import { onInputOnHandleDistanceInModal } from '../../eventHandlers/onInputOnHandleDistanceInModal';
 import { onSelectTypeOfOpeningInModal } from '../../eventHandlers/onSelectTypeOfOpeningInModal';
 import { refs } from '../../refs';
+import { resetOptionsOfCurrentComplectByType } from '../resetOptionsOfCurrentComplectByType';
 import { setStartDataOfModalOptions } from './setStartDataOfModalOptions';
 
 export function showModal(currentID) {
+  const options = findModalOptionObjectByID(currentID);
+  resetOptionsOfCurrentComplectByType(options.typeOfOpening);
   refs.modalFormRef.reset();
   refs.modalBlock.classList.remove('hidden');
   const widthInFormInputRef = document.querySelector(
@@ -24,4 +29,5 @@ export function showModal(currentID) {
   refs.handleDistanceInModal.addEventListener('change', onChangeOnHandleDistanceInModal);
   refs.handleDistanceInModal.addEventListener('blur', onBlurOnHandleDistanceInModal);
   refs.typeOfOpening.addEventListener('change', onSelectTypeOfOpeningInModal);
+  refs.isTurnTiltGetriebeInModal.addEventListener('change', onChangetIsTurnTiltGetriebeInModal);
 }

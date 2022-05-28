@@ -23,6 +23,7 @@ export const refs = {
   microVentilationInModal: document.querySelector('.micro-ventilation-modal'),
   gorizontalLock: document.querySelector('.bottom-horizontal-lock-modal'),
   withoutBottomHinge: document.querySelector('.without-bottom-hinge-modal'),
+  isTurnTiltGetriebeInModal: document.querySelector('.turn-tilt-getriebe-type-2-modal'),
 
   modalFormRef: document.querySelector('.modal-form'),
   modalBlock: document.querySelector('[data-modal]'),

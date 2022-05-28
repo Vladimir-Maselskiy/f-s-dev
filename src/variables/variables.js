@@ -5,7 +5,7 @@ export function addModalOption(option) {
 }
 
 export function modalOptionsPushID(id) {
-  modalOptions.push({ id });
+  modalOptions.push({ id, typeOfOpening: 'type-1' });
 }
 
 export function modalOptionsDeleteObject(obj) {
