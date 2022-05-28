@@ -8,6 +8,7 @@ export function makeModalOptionObjectOnCloseModal(id) {
   modalOption.gorizontalLock = refs.gorizontalLock.checked;
   modalOption.withoutBottomHinge = refs.withoutBottomHinge.checked;
   modalOption.isTurnTiltGetriebe = refs.isTurnTiltGetriebeInModal.checked;
+  modalOption.hingeSidePress = refs.hingeSidePress[refs.hingeSidePress.options.selectedIndex].value;
   if (modalOption.typeOfOpening === undefined) {
     modalOption.typeOfOpening = 'type-1';
   }

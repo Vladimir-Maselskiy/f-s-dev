@@ -2,9 +2,9 @@ import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObject
 import { refs } from '../../refs';
 
 export function setStartHandleDistanceInModel(id) {
-  const obj = findModalOptionObjectByID(id);
-  if (obj.hanleDistance) {
-    refs.handleDistanceInModal.value = obj.hanleDistance;
+  const option = findModalOptionObjectByID(id);
+  if (option.hanleDistance) {
+    refs.handleDistanceInModal.value = option.hanleDistance;
   } else {
     refs.handleDistanceInModal.placeholder =
       Number(document.querySelector(`.form-group[data-form="${id}"] [data-input="height"]`).value) /
