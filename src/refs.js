@@ -25,6 +25,7 @@ export const refs = {
   withoutBottomHinge: document.querySelector('.without-bottom-hinge-modal'),
   isTurnTiltGetriebeInModal: document.querySelector('.turn-tilt-getriebe-type-2-modal'),
   hingeSidePress: document.querySelector('.hinge-side-press-block-modal'),
+  shtulpBlockInModal: document.querySelector('.shtulp-radio-modal-block'),
 
   modalFormRef: document.querySelector('.modal-form'),
   modalBlock: document.querySelector('[data-modal]'),

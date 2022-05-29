@@ -4,6 +4,9 @@ import { refs } from '../../refs';
 export function setStartIsTurnTiltGetriebeStatusOfModalOptions(id) {
   const option = findModalOptionObjectByID(id);
 
+  refs.isTurnTiltGetriebeInModal.removeAttribute('disabled');
+  refs.isTurnTiltGetriebeInModal.parentNode.classList.remove('disabled-text-gray');
+
   if (refs.widthInModalInput.value > 800 && option.typeOfOpening === 'type-2') {
     refs.isTurnTiltGetriebeInModal.checked = true;
     refs.isTurnTiltGetriebeInModal.disabled = 'disabled';

@@ -9,6 +9,9 @@ export function makeModalOptionObjectOnCloseModal(id) {
   modalOption.withoutBottomHinge = refs.withoutBottomHinge.checked;
   modalOption.isTurnTiltGetriebe = refs.isTurnTiltGetriebeInModal.checked;
   modalOption.hingeSidePress = refs.hingeSidePress[refs.hingeSidePress.options.selectedIndex].value;
+  modalOption.shtulpBlock = refs.shtulpBlockInModal.querySelector(
+    '[name="shtulp-radio"]:checked',
+  ).value;
   if (modalOption.typeOfOpening === undefined) {
     modalOption.typeOfOpening = 'type-1';
   }

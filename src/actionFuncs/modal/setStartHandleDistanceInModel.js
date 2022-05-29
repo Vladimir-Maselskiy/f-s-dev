@@ -3,6 +3,34 @@ import { refs } from '../../refs';
 
 export function setStartHandleDistanceInModel(id) {
   const option = findModalOptionObjectByID(id);
+
+  if (option.typeOfOpening === 'type-5') {
+    if (option.shtulpBlock === 'getriebe') {
+      refs.handleDistanceInModal.removeAttribute('disabled');
+      refs.handleDistanceInModal.parentNode.classList.remove('disabled-text-gray');
+      return;
+    }
+
+    if (option.shtulpBlock === 'latch') {
+      refs.handleDistanceInModal.value = '';
+      refs.handleDistanceInModal.setAttribute('disabled', 'disabled');
+      refs.handleDistanceInModal.parentNode.classList.add('disabled-text-gray');
+      return;
+    }
+  }
+  if (option.typeOfOpening === 'type-2') {
+    if (option.isTurnTiltGetriebe === false) {
+      refs.handleDistanceInModal.value = '';
+      refs.handleDistanceInModal.setAttribute('disabled', 'disabled');
+      refs.handleDistanceInModal.parentNode.classList.add('disabled-text-gray');
+      return;
+    }
+    if (option.isTurnTiltGetriebe === true) {
+      refs.handleDistanceInModal.removeAttribute('disabled');
+      refs.handleDistanceInModal.parentNode.classList.remove('disabled-text-gray');
+      return;
+    }
+  }
   if (option.hanleDistance) {
     refs.handleDistanceInModal.value = option.hanleDistance;
   } else {
