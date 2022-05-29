@@ -198,6 +198,10 @@
     top: 10px;
     right: 10px;
 
+    & button:not(:last-child) {
+      margin-right: 10px;
+    }
+
     & button {
       position: relative;
       border-radius: 3px;
@@ -206,6 +210,21 @@
       fill: aliceblue;
       border: none;
     }
+
+    @media screen and (max-width: 400px) {
+      & button.type-of-opening {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        margin-right: 0;
+      }
+
+      & button.type-of-opening:active {
+        background-color: $accent-color-activ;
+        top: 92px;
+      }
+    }
+
     & button:hover,
     & button:focus {
       background-color: $accent-color-hover;
@@ -218,9 +237,6 @@
 
     & button:disabled {
       background: $accent-color-disabled;
-    }
-    & button:not(:last-child) {
-      margin-right: 10px;
     }
   }
 

@@ -8,8 +8,8 @@ import { setStartWithoutBottomHingeStatusOfModalOptions } from './setStartWithou
 export function setStartDataOfModalOptions(id) {
   setStartHandleDistanceInModel(id);
   setStartMicroVentilationStatusInModel(id);
+  setStartIsTurnTiltGetriebeStatusOfModalOptions(id);
   setStartGorizontalLockStatusOfModalOptions(id);
   setStartWithoutBottomHingeStatusOfModalOptions(id);
-  setStartIsTurnTiltGetriebeStatusOfModalOptions(id);
   setStartHingeSidePressSelectStatusOfModalOptions(id);
 }

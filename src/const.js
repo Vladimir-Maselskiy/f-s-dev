@@ -1,4 +1,17 @@
-export const sizeRestrictions = {
+export let sizeRestrictions = {
+  minWidth: 400,
+  maxWidth: 1300,
+  minHeight: 470,
+  maxHeight: 2400,
+};
+export const sizeRestrictionsTiltMode = {
+  minWidth: 300,
+  maxWidth: 2250,
+  minHeight: 350,
+  maxHeight: 2250,
+};
+
+export const sizeRestrictionsStandartMode = {
   minWidth: 400,
   maxWidth: 1300,
   minHeight: 470,
@@ -14,3 +27,11 @@ export const clientPercentage = {
     this.tradeMargin = newTradeMargin;
   },
 };
+
+export function setCurrentSizeRestrictions(options) {
+  if (options.typeOfOpening === 'type-3') {
+    sizeRestrictions = sizeRestrictionsTiltMode;
+  } else {
+    sizeRestrictions = sizeRestrictionsStandartMode;
+  }
+}

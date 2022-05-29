@@ -19,11 +19,11 @@ export function getHingeSidePress(options) {
       return;
     }
     if (hingeSidePress === 'hinge-side-press-type-3') {
-      addArticleToOrderList(findElementsByArticle(94491), 10.5);
+      addArticleToOrderList(findElementsByArticle(94030), 10.5);
     }
     if (hingeSidePress === 'hinge-side-press-type-4') {
-      addArticleToOrderList(findElementsByArticle(94491), 10.5);
-      addArticleToOrderList(findElementsByArticle(94491), 10.5);
+      addArticleToOrderList(findElementsByArticle(94030), 10.5);
+      addArticleToOrderList(findElementsByArticle(94030), 10.5);
     }
     if (hingeSidePress === 'hinge-side-press-type-5') {
       addArticleToOrderList(findElementsByArticle(52321), 10.5);

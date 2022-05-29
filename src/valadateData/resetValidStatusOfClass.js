@@ -1,8 +1,7 @@
 import { sizeRestrictions } from '../const';
 
-const { minWidth, maxWidth, minHeight, maxHeight } = sizeRestrictions;
-
 export function resetValidStatusOfClass(inputRef) {
+  const { minWidth, maxWidth, minHeight, maxHeight } = sizeRestrictions;
   if (inputRef.classList.contains('valid')) {
     inputRef.classList.remove('valid');
   }

@@ -2,8 +2,11 @@ import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
 export function getBottomEndingForGetriebe(options) {
-  const { height, isTurnTiltGetriebe = false, typeOfOpening = 'type-1' } = options;
+  const { width, height, isTurnTiltGetriebe = false, typeOfOpening = 'type-1' } = options;
   if (!isTurnTiltGetriebe && typeOfOpening === 'type-2') {
+    return;
+  }
+  if ((typeOfOpening === 'type-3' && height < 800) || width < 470) {
     return;
   }
   if (height >= 470 && height < 1750) {

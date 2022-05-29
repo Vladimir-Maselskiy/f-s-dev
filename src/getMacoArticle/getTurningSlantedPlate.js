@@ -11,6 +11,9 @@ export function getTurningSlantedPlate(options) {
   if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
     return;
   }
+  if (typeOfOpening === 'type-3') {
+    return;
+  }
   if (
     (systemOfPVC === '13' ||
       systemOfPVC === 'Salamander' ||

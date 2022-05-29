@@ -3,7 +3,7 @@ import { findElementsByArticle } from './findElementsByArticle';
 
 export function getMicroVentilationPlate(options) {
   const { systemOfPVC, typeOfOpening } = options;
-  if (typeOfOpening === 'type-2') {
+  if (typeOfOpening === 'type-2' || typeOfOpening === 'type-3' || typeOfOpening === 'type-5') {
     return;
   }
   if (

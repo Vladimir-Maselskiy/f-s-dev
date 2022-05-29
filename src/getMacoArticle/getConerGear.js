@@ -4,7 +4,7 @@ import { getMicroVentilationPlate } from './getMicroVentilationPlate';
 
 export function getConerGear(options) {
   const { systemOfPVC, microVentilation = true, typeOfOpening = 'type-1' } = options;
-  if (typeOfOpening === 'type-2') {
+  if (typeOfOpening === 'type-2' || typeOfOpening === 'type-3' || typeOfOpening === 'type-5') {
     return;
   }
   if (microVentilation) {

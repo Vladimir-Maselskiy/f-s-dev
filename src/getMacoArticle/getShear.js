@@ -3,6 +3,10 @@ import { findElementsByArticle } from './findElementsByArticle';
 
 export function getShear(options) {
   const { width, typeOfOpening = 'type-1' } = options;
+  if (typeOfOpening === 'type-3') {
+    addArticleToOrderList(findElementsByArticle(101548), 1);
+    return;
+  }
   if (typeOfOpening === 'type-2') {
     addArticleToOrderList(findElementsByArticle(52462), 1);
     return;

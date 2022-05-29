@@ -1,9 +1,8 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { sizeRestrictions } from '../const';
 
-const { minWidth, maxWidth, minHeight, maxHeight } = sizeRestrictions;
-
 export function resetValidStatusOfClasses(arrayOfFields) {
+  const { minWidth, maxWidth, minHeight, maxHeight } = sizeRestrictions;
   arrayOfFields.forEach(inputRef => {
     if (inputRef.classList.contains('valid')) {
       inputRef.classList.remove('valid');

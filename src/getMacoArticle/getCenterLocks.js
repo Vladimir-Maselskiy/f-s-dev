@@ -9,6 +9,12 @@ export function getCenterLocks(options) {
     typeOfOpening = 'type-1',
     isTurnTiltGetriebe = false,
   } = options;
+
+  if (typeOfOpening === 'type-3' && height >= 800 && width >= 470) {
+    addArticleToOrderList(findElementsByArticle(211924, 211924), 6);
+    return;
+  }
+
   if (gorizontalLock) {
     if (width > 480 && width < 800) {
       addArticleToOrderList(findElementsByArticle(228398), 6);

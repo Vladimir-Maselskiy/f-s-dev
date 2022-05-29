@@ -1,8 +1,10 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
-export function getTopHinge({ systemOfPVC } = options) {
+export function getTopHinge(options) {
+  const { systemOfPVC, typeOfOpening } = options;
   addArticleToOrderList(findElementsByArticle(52480, 94491), 11);
+
   if (
     systemOfPVC === '13' ||
     systemOfPVC === 'Salamander' ||

@@ -27,6 +27,7 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
     refs.gorizontalLock.checked = false;
     refs.gorizontalLock.disabled = 'disabled';
     refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
+    console.log('Включена горизонтальная блокировка1');
     return;
   }
 

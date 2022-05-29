@@ -3,12 +3,17 @@ import { findElementsByArticle } from './findElementsByArticle';
 
 export function getMicroliftPlate(options) {
   const {
+    width,
+    height,
     systemOfPVC,
     sideOfHinge,
     typeOfOpening = 'type-1',
     isTurnTiltGetriebe = false,
   } = options;
-  if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
+  if ((typeOfOpening === 'type-2' && !isTurnTiltGetriebe) || height < 800) {
+    return;
+  }
+  if ((typeOfOpening === 'type-3' && height < 800) || width <= 800) {
     return;
   }
 
