@@ -3,8 +3,6 @@ import { refs } from '../../refs';
 
 export function setStartDataOfSelect(id) {
   const obj = findModalOptionObjectByID(id);
-  console.log(refs.selectBlockTypeOfOpening);
-  console.log(obj);
   const selectOptionsRef = refs.selectBlockTypeOfOpening.querySelectorAll('option');
 
   selectOptionsRef.forEach(option => {

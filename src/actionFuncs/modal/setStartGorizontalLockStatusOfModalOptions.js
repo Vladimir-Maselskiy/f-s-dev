@@ -27,6 +27,7 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
     refs.gorizontalLock.checked = false;
     refs.gorizontalLock.disabled = 'disabled';
     refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
+    return;
   }
 
   if (option.gorizontalLock !== undefined) {
