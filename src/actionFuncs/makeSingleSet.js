@@ -10,21 +10,23 @@ import { getGetriebe } from '../getMacoArticle/Getriebe/getGetriebe';
 import { getBottomEndingForGetriebe } from '../getMacoArticle/getBottomEndingForGetriebe';
 import { getCenterLocks } from '../getMacoArticle/getCenterLocks';
 import { getStrikeplates } from '../getMacoArticle/getStrikePlates';
+import { getHingeSidePress } from '../getMacoArticle/getHingeSidePress';
 
 export function makeSingleSet(options) {
   const { width, height, quantitySet } = options;
   for (let i = 0; i < quantitySet; i += 1) {
-    getShear(width);
+    getShear(options);
     getConerGear(options);
     getGetriebe(options);
-    getBottomEndingForGetriebe(height);
+    getBottomEndingForGetriebe(options);
     getCenterLocks(options);
     getMicroliftPlate(options);
     getTurningSlantedPlate(options);
     getTopHinge(options);
     getBottomHinge(options);
-    getTopDecor();
+    getTopDecor(options);
     getBottomDecor(options);
+    getHingeSidePress(options);
     getStrikeplates(options);
   }
 }

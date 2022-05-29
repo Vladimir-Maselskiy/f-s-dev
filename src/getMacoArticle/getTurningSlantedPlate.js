@@ -2,7 +2,12 @@ import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
 export function getTurningSlantedPlate(options) {
-  const { systemOfPVC, sideOfHinge, typeOfOpening = 'type-1', isTurnTiltGetriebe = false} = options;
+  const {
+    systemOfPVC,
+    sideOfHinge,
+    typeOfOpening = 'type-1',
+    isTurnTiltGetriebe = false,
+  } = options;
   if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
     return;
   }

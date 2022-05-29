@@ -2,9 +2,14 @@ import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../findElementsByArticle';
 import { getExtension } from '../getExtension';
 import { getConstGetriebe } from './getConstGetriebe';
+import { getTurningGetgriebe } from './getTurningGetgriebe';
 
 export function getGetriebe(options) {
-  const { height, hanleDistance } = options;
+  const { height, hanleDistance, typeOfOpening = 'type-1', isTurnTiltGetriebe = false } = options;
+  if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
+    getTurningGetgriebe(options);
+    return;
+  }
   if (hanleDistance) {
     getConstGetriebe(height, hanleDistance);
     return;

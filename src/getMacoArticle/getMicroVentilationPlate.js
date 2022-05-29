@@ -1,7 +1,11 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
-export function getMicroVentilationPlate(systemOfPVC) {
+export function getMicroVentilationPlate(options) {
+  const { systemOfPVC, typeOfOpening } = options;
+  if (typeOfOpening === 'type-2') {
+    return;
+  }
   if (
     systemOfPVC === '13' ||
     systemOfPVC === 'Salamander' ||

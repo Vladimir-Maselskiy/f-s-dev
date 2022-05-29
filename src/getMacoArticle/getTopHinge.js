@@ -1,5 +1,6 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
+
 export function getTopHinge({ systemOfPVC } = options) {
   addArticleToOrderList(findElementsByArticle(52480, 94491), 11);
   if (

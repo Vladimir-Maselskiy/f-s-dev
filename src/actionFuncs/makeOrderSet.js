@@ -4,6 +4,7 @@ import { makeRenderOrder } from './makeRenderOrder';
 import { getCurrentIDByFormRef } from '../calcFuncs/getCurrentIDByFormRef';
 import { modalOptions } from '../variables/variables';
 import { findModalOptionObjectByID } from '../calcFuncs/findModalOptionObjectByID';
+import { refs } from '../refs';
 
 export function makeOrderSet() {
   const renderedInputFields = document.querySelectorAll('.form-group');
@@ -34,13 +35,20 @@ export function makeOrderSet() {
       }
     }
 
+    // for (const hingeSidePress of refs.hingeSidePress) {
+    //   if (hingeSidePress.selected) {
+    //     options.hingeSidePress = hingeSidePress.value;
+    //   }
+    // }
+
     // if (options.width >= 800) {
     //   options.gorizontalLock = true;
     // }
     if (!options.gorizontalLock) {
-      if (options.width >= 800) {
+      if (options.width > 800) {
         options.gorizontalLock = true;
-      } else {
+      }
+      if (options.gorizontalLock < 470) {
         options.gorizontalLock = false;
       }
     }

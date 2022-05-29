@@ -1,7 +1,17 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from './findElementsByArticle';
 
-export function getMicroliftPlate({ systemOfPVC, sideOfHinge } = options) {
+export function getMicroliftPlate(options) {
+  const {
+    systemOfPVC,
+    sideOfHinge,
+    typeOfOpening = 'type-1',
+    isTurnTiltGetriebe = false,
+  } = options;
+  if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
+    return;
+  }
+
   if (
     (systemOfPVC === '13' ||
       systemOfPVC === 'Salamander' ||
