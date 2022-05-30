@@ -1,5 +1,5 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from './findElementsByArticle';
+import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 
 export function getBottomEndingForGetriebe(options) {
   const { width, height, isTurnTiltGetriebe = false, typeOfOpening = 'type-1' } = options;

@@ -3,7 +3,6 @@ import { refs } from '../../refs';
 
 export function setStartHingeSidePressSelectStatusOfModalOptions(id) {
   const option = findModalOptionObjectByID(id);
-  console.log(refs.hingeSidePress);
   if (option.hingeSidePress !== undefined) {
     let i = null;
     const selectFields = refs.hingeSidePress.querySelectorAll('option');

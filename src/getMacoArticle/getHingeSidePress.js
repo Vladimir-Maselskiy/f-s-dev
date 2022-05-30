@@ -1,5 +1,5 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from './findElementsByArticle';
+import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 import { getTopDecor } from './getTopDecor';
 import { getTopHinge } from './getTopHinge';
 

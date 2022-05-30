@@ -1,12 +1,20 @@
 import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObjectByID';
 import { refs } from '../../refs';
-import { resetStatusOfGorizontalLockAndHandleDistance } from './resetStatusOfGorizontalLockAndHandleDistance';
+import { resetStatusOfGorizontalLock } from './resetStatusOfGorizontalLock';
 
 export function setStartGorizontalLockStatusOfModalOptions(id) {
+  resetStatusOfGorizontalLock();
+
   const option = findModalOptionObjectByID(id);
 
-  resetStatusOfGorizontalLockAndHandleDistance();
-  if (refs.widthInModalInput.value > 800 && option.shtulpBlock === 'latch') {
+  if (option.shtulpBlock === 'latch') {
+    refs.gorizontalLock.checked = false;
+    refs.gorizontalLock.disabled = 'disabled';
+    refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
+    return;
+  }
+
+  if (option.typeOfOpening === 'type-2' && !refs.isTurnTiltGetriebeInModal.checked) {
     refs.gorizontalLock.checked = false;
     refs.gorizontalLock.disabled = 'disabled';
     refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
@@ -27,30 +35,7 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
     return;
   }
 
-  if (option.typeOfOpening === 'type-2' && !refs.isTurnTiltGetriebeInModal.checked) {
-    refs.gorizontalLock.checked = false;
-    refs.gorizontalLock.disabled = 'disabled';
-    refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
-    console.log('Включена горизонтальная блокировка1');
-    return;
-  }
-
-  if (option.typeOfOpening === 'type-5') {
-    if (option.shtulpBlock === 'getriebe') {
-      refs.gorizontalLock.removeAttribute('disabled');
-      refs.gorizontalLock.parentNode.classList.remove('disabled-text-gray');
-    }
-
-    if (option.shtulpBlock === 'latch') {
-      refs.gorizontalLock.checked = false;
-      refs.gorizontalLock.disabled = 'disabled';
-      refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
-      return;
-    }
-  }
-
   if (option.gorizontalLock !== undefined) {
-    refs.gorizontalLock.removeAttribute('disabled');
     refs.gorizontalLock.checked = option.gorizontalLock;
     refs.gorizontalLock.parentNode.classList.remove('disabled-text-gray');
     return;

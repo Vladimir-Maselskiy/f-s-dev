@@ -1,14 +1,18 @@
 import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObjectByID';
-import { setCurrentSizeRestrictions } from '../../const';
+import { refs } from '../../refs';
+import { resetPresetOptionForAllType } from '../modal/resetPresetOptionForAllType';
+import { setStartDataOfModalOptions } from '../modal/setStartDataOfModalOptions';
+import { setWidthAndHeightInModal } from '../modal/setWidthAndHeightInModal';
 import { resetOptionsOfCurrentComplectByType } from '../resetOptionsOfCurrentComplectByType';
 import { getIsTypeOfOpeningChanged } from './getIsTypeOfOpeningChanged';
 
 export function makeTypeOfOpeningModalOptionObjectOnCloseModal(event, id) {
   const options = findModalOptionObjectByID(id);
-  const isTypeOfOpeningChanged = getIsTypeOfOpeningChanged(event);
   options.typeOfOpening = event.target[0].options[event.target[0].options.selectedIndex].value;
-  // setCurrentSizeRestrictions(options);
+
+  resetPresetOptionForAllType(id);
   console.log(options);
+  const isTypeOfOpeningChanged = getIsTypeOfOpeningChanged(event);
 
   if (isTypeOfOpeningChanged) {
     resetOptionsOfCurrentComplectByType(options.typeOfOpening);

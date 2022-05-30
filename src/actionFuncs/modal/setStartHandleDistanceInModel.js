@@ -1,7 +1,9 @@
 import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObjectByID';
 import { refs } from '../../refs';
+import { resetStatusOfHandleDistance } from './resetStatusOfHandleDistance';
 
 export function setStartHandleDistanceInModel(id) {
+  resetStatusOfHandleDistance;
   const option = findModalOptionObjectByID(id);
 
   if (option.typeOfOpening === 'type-5') {

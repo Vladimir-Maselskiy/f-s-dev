@@ -1,5 +1,5 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from './findElementsByArticle';
+import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 
 export function getShear(options) {
   const { width, typeOfOpening = 'type-1' } = options;

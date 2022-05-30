@@ -16,11 +16,13 @@ import { onKeyDownByForm } from './eventHandlers/onKeyDownByForm';
 import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 import { onNewOrderButtonClick } from './eventHandlers/onNewOrderButtonClick';
 import { onTypeOfOpeningButtonClick } from './eventHandlers/onTypeOfOpeningButtonClick';
+import { onChangeOnInput } from './eventHandlers/onChangeOnInput';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
 refs.form.addEventListener('focusin', onFocusIn);
 refs.form.addEventListener('keydown', onKeyDownByForm);
+refs.form.addEventListener('change', onChangeOnInput);
 refs.addButton.addEventListener('click', onAddButtonClick);
 refs.typeOfOpening.addEventListener('click', onTypeOfOpeningButtonClick);
 refs.removeButton.addEventListener('click', onRemoveButtonClick);

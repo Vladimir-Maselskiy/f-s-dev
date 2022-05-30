@@ -1,6 +1,6 @@
 import { findModalOptionObjectByID } from '../../calcFuncs/findModalOptionObjectByID';
 import { refs } from '../../refs';
-import { resetStatusOfGorizontalLockAndHandleDistance } from './resetStatusOfGorizontalLockAndHandleDistance';
+import { resetStatusOfGorizontalLockAndHandleDistance } from './resetStatusOfHandleDistance';
 
 export function setStartShtulpBlockSelectStatusOfModalOptions(id) {
   const option = findModalOptionObjectByID(id);

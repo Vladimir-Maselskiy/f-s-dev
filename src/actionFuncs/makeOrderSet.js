@@ -35,25 +35,21 @@ export function makeOrderSet() {
       }
     }
 
-    // for (const hingeSidePress of refs.hingeSidePress) {
-    //   if (hingeSidePress.selected) {
-    //     options.hingeSidePress = hingeSidePress.value;
-    //   }
-    // }
-
     // if (options.width >= 800) {
     //   options.gorizontalLock = true;
     // }
-    if (!options.gorizontalLock) {
+    // console.log(options.gorizontalLock);
+    if (!options.gorizontalLock && options.typeOfOpening === undefined) {
       if (options.width > 800) {
         options.gorizontalLock = true;
-      }
-      if (options.gorizontalLock < 470) {
-        options.gorizontalLock = false;
+      } else {
+        if (options.gorizontalLock < 470) {
+          options.gorizontalLock = false;
+        }
       }
     }
-    console.log('options:', options);
 
+    console.log('options:', options);
     makeSingleSet(options);
   });
 

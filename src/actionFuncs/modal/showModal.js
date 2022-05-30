@@ -9,20 +9,14 @@ import { onSelectTypeOfOpeningInModal } from '../../eventHandlers/onSelectTypeOf
 import { refs } from '../../refs';
 import { resetOptionsOfCurrentComplectByType } from '../resetOptionsOfCurrentComplectByType';
 import { setStartDataOfModalOptions } from './setStartDataOfModalOptions';
+import { setWidthAndHeightInModal } from './setWidthAndHeightInModal';
 
 export function showModal(currentID) {
   const options = findModalOptionObjectByID(currentID);
   resetOptionsOfCurrentComplectByType(options.typeOfOpening);
   refs.modalFormRef.reset();
   refs.modalBlock.classList.remove('hidden');
-  const widthInFormInputRef = document.querySelector(
-    `.form-group[data-form="${currentID}"] [data-input="width"]`,
-  );
-  const heightInFormInputRef = document.querySelector(
-    `.form-group[data-form="${currentID}"] [data-input="height"]`,
-  );
-  refs.widthInModalInput.value = widthInFormInputRef.value;
-  refs.heightInModalInputRef.value = heightInFormInputRef.value;
+  setWidthAndHeightInModal(currentID);
   setStartDataOfModalOptions(currentID);
 
   refs.handleDistanceInModal.addEventListener('focus', onFocusOnHandleDistanceInModal);

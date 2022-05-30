@@ -12,9 +12,10 @@ import { getCenterLocks } from '../getMacoArticle/getCenterLocks';
 import { getStrikeplates } from '../getMacoArticle/getStrikePlates';
 import { getHingeSidePress } from '../getMacoArticle/getHingeSidePress';
 import { getArticlesForType3 } from '../getMacoArticle/getArticlesForType3';
+import { getArticlesForType2 } from '../getMacoArticle/getArticlesForType2';
 
 export function makeSingleSet(options) {
-  const { width, height, quantitySet } = options;
+  const { quantitySet } = options;
   for (let i = 0; i < quantitySet; i += 1) {
     getShear(options);
     getConerGear(options);
@@ -28,6 +29,7 @@ export function makeSingleSet(options) {
     getTopDecor(options);
     getBottomDecor(options);
     getHingeSidePress(options);
+    getArticlesForType2(options);
     getArticlesForType3(options);
     getStrikeplates(options);
   }

@@ -3,7 +3,7 @@ import {
   singleOrder,
   clearSingleOrder,
 } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from './findElementsByArticle';
+import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 
 export function getStrikeplates({ systemOfPVC } = options) {
   const quantityOfPlates = getQuantityOfPlates(singleOrder);
