@@ -11,7 +11,7 @@ export function getTurningSlantedPlate(options) {
   if (typeOfOpening === 'type-2' && !isTurnTiltGetriebe) {
     return;
   }
-  if (typeOfOpening === 'type-3') {
+  if (typeOfOpening === 'type-3' || typeOfOpening === 'type-4' || typeOfOpening === 'type-5') {
     return;
   }
   if (

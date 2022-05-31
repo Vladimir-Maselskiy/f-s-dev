@@ -5,8 +5,9 @@ import {
 } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 
-export function getStrikeplates({ systemOfPVC } = options) {
-  const quantityOfPlates = getQuantityOfPlates(singleOrder);
+export function getStrikeplates(options) {
+  const { systemOfPVC, typeOfOpening } = options;
+  const quantityOfPlates = getQuantityOfPlates(singleOrder, typeOfOpening);
 
   if (systemOfPVC === '13' || systemOfPVC === 'Salamander') {
     const strikePlates = findElementsByArticle(34824);
@@ -38,11 +39,17 @@ export function getStrikeplates({ systemOfPVC } = options) {
   }
 }
 
-function getQuantityOfPlates(order) {
+function getQuantityOfPlates(order, typeOfOpening) {
+  console.log(order);
   let quantity = 0;
   order.forEach(element => {
     if (element.VZ) {
-      quantity += element.VZ;
+      if (
+        (element.articleGroupID !== 3 && element.articleGroupID !== 2) ||
+        typeOfOpening !== 'type-4'
+      ) {
+        quantity += element.VZ;
+      }
     }
   });
   clearSingleOrder();
