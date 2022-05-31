@@ -5,7 +5,7 @@ export function getArticlesForType5(options) {
   const { typeOfOpening } = options;
   if (typeOfOpening !== 'type-5') return;
   const quantityOfPlates = getQuantityOfPlates(singleOrder, typeOfOpening);
-
+  if (quantityOfPlates === 0) return;
   const strikePlates = findElementsByArticle(34610);
   const copyStrikePlates = getCopy(strikePlates);
   copyStrikePlates[0].quantity = quantityOfPlates;
@@ -14,7 +14,6 @@ export function getArticlesForType5(options) {
 }
 
 function getQuantityOfPlates(order) {
-  console.log(order);
   let quantity = 0;
   order.forEach(element => {
     if (element.VZ) {
