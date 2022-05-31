@@ -1,6 +1,6 @@
 import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
-import { getMicroVentilationPlate } from './getMicroVentilationPlate';
+import { getMicroVentilationPlate } from './additionalArticle/getMicroVentilationPlate';
 
 export function getConerGear(options) {
   const { systemOfPVC, microVentilation = true, typeOfOpening = 'type-1' } = options;

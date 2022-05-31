@@ -1,12 +1,17 @@
 import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
-import { getExtension } from '../getExtension';
+import { getExtension } from '../additionalArticle/getExtension';
 import { getConstGetriebe } from './getConstGetriebe';
+import { getGetriebeForSchtulpPassive } from './getGetriebeForSchtulpPassive';
 import { getTiltGetriebe } from './getTiltGetriebe';
 import { getTurningGetgriebe } from './getTurningGetgriebe';
 
 export function getGetriebe(options) {
   const { height, hanleDistance, typeOfOpening = 'type-1', isTurnTiltGetriebe = false } = options;
+  if (typeOfOpening === 'type-5') {
+    getGetriebeForSchtulpPassive(options);
+    return;
+  }
   if (typeOfOpening === 'type-3') {
     getTiltGetriebe(options);
     return;

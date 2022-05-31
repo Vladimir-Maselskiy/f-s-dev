@@ -1,5 +1,5 @@
-import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
+import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
 
 export function getArticlesForType2(options) {
   const { isTurnTiltGetriebe, typeOfOpening } = options;

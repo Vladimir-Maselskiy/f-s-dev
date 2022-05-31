@@ -3,7 +3,7 @@ import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
 
 export function getBottomEndingForGetriebe(options) {
   const { width, height, isTurnTiltGetriebe = false, typeOfOpening = 'type-1' } = options;
-  if (!isTurnTiltGetriebe && typeOfOpening === 'type-2') {
+  if ((!isTurnTiltGetriebe && typeOfOpening === 'type-2') || typeOfOpening === 'type-5') {
     return;
   }
   if ((typeOfOpening === 'type-3' && height < 800) || width < 470) {

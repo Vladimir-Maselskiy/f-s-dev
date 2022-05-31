@@ -1,5 +1,5 @@
-import { addArticleToOrderList, singleOrder } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
+import { addArticleToOrderList, singleOrder } from '../../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
 
 export function getArticlesForType5(options) {
   const { typeOfOpening } = options;

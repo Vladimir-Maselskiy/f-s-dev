@@ -7,7 +7,7 @@ export function getShear(options) {
     addArticleToOrderList(findElementsByArticle(101548), 1);
     return;
   }
-  if (typeOfOpening === 'type-2') {
+  if (typeOfOpening === 'type-2' || typeOfOpening === 'type-5') {
     addArticleToOrderList(findElementsByArticle(52462), 1);
     return;
   }

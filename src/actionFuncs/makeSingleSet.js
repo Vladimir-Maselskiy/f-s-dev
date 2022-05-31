@@ -11,9 +11,9 @@ import { getBottomEndingForGetriebe } from '../getMacoArticle/getBottomEndingFor
 import { getCenterLocks } from '../getMacoArticle/getCenterLocks';
 import { getStrikeplates } from '../getMacoArticle/getStrikePlates';
 import { getHingeSidePress } from '../getMacoArticle/getHingeSidePress';
-import { getArticlesForType3 } from '../getMacoArticle/getArticlesForType3';
-import { getArticlesForType2 } from '../getMacoArticle/getArticlesForType2';
-import { getArticlesForType5 } from '../getMacoArticle/getArticlesForType5';
+import { getArticlesForType3 } from '../getMacoArticle/additionalArticle/getArticlesForType3';
+import { getArticlesForType2 } from '../getMacoArticle/additionalArticle/getArticlesForType2';
+import { getArticlesForType5 } from '../getMacoArticle/additionalArticle/getArticlesForType5';
 
 export function makeSingleSet(options) {
   const { quantitySet } = options;

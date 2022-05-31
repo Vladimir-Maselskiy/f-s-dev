@@ -5,10 +5,15 @@ export function getCenterLocks(options) {
   const {
     width,
     height,
+    shtulpBlock,
     gorizontalLock = false,
     typeOfOpening = 'type-1',
     isTurnTiltGetriebe = false,
   } = options;
+
+  if (typeOfOpening === 'type-5' && shtulpBlock === 'latch') {
+    return;
+  }
 
   if (typeOfOpening === 'type-3' && height >= 800 && width >= 470) {
     addArticleToOrderList(findElementsByArticle(211924, 211924), 6);

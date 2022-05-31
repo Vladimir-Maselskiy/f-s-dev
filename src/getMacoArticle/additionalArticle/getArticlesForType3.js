@@ -1,7 +1,7 @@
-import { addArticleToOrderList } from '../actionFuncs/addArticleToOrderList';
-import { findElementsByArticle } from '../calcFuncs/findElementsByArticle';
-import { getTopDecor } from './getTopDecor';
-import { getTopHinge } from './getTopHinge';
+import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
+import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
+import { getTopDecor } from '../getTopDecor';
+import { getTopHinge } from '../getTopHinge';
 
 export function getArticlesForType3(options) {
   const { width, height, systemOfPVC, typeOfOpening, sideOfHinge } = options;

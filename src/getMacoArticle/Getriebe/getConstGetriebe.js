@@ -1,6 +1,6 @@
 import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
-import { getExtension } from '../getExtension';
+import { getExtension } from '../additionalArticle/getExtension';
 
 export function getConstGetriebe(height, hanleDistance) {
   let cutGetriebeLength = null;

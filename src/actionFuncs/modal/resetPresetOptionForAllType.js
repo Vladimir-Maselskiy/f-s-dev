@@ -14,4 +14,12 @@ export function resetPresetOptionForAllType(id) {
     options.isTurnTiltGetriebe = refs.isTurnTiltGetriebeInModal.checked;
     options.hingeSidePress = refs.hingeSidePress.querySelector('option:checked').value;
   }
+  if (options.typeOfOpening === 'type-5') {
+    options.shtulpBlock = refs.shtulpBlockInModal.querySelector(
+      '[name="shtulp-radio"]:checked',
+    ).value;
+    console.log(options.shtulpBlock);
+    // options.isTurnTiltGetriebe = refs.isTurnTiltGetriebeInModal.checked;
+    // options.hingeSidePress = refs.hingeSidePress.querySelector('option:checked').value;
+  }
 }
