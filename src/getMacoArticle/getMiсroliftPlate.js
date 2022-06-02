@@ -15,21 +15,16 @@ export function getMicroliftPlate(options) {
   if ((typeOfOpening === 'type-2' && !isTurnTiltGetriebe) || height < 800) {
     return;
   }
-  if ((typeOfOpening === 'type-3' && height < 800) || width <= 800) {
-    return;
-  }
-  if (typeOfOpening === 'type-4' && shtulpBlock === 'getriebe') {
-  }
-  if (typeOfOpening === 'type-5') {
+  if (typeOfOpening === 'type-3' && height < 800) {
     return;
   }
 
-  if (shtulpBlock === 'latch') {
-    if (sideOfHinge === 'left') {
+  if (shtulpBlock === 'latch' && typeOfOpening === 'type-5') {
+    if (sideOfHinge === 'right') {
       addArticleToOrderList(findElementsByArticle(355924), 9);
       return;
     }
-    if (sideOfHinge === 'right') {
+    if (sideOfHinge === 'left') {
       addArticleToOrderList(findElementsByArticle(355923), 9);
       return;
     }

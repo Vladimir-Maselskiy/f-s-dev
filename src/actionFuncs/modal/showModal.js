@@ -8,6 +8,7 @@ import { onInputOnHandleDistanceInModal } from '../../eventHandlers/onInputOnHan
 import { onSelectTypeOfOpeningInModal } from '../../eventHandlers/onSelectTypeOfOpeningInModal';
 import { refs } from '../../refs';
 import { resetOptionsOfCurrentComplectByType } from '../resetOptionsOfCurrentComplectByType';
+import { resetPresetOptionForAllType } from './resetPresetOptionForAllType';
 import { setStartDataOfModalOptions } from './setStartDataOfModalOptions';
 import { setWidthAndHeightInModal } from './setWidthAndHeightInModal';
 
@@ -17,7 +18,7 @@ export function showModal(currentID) {
   refs.modalFormRef.reset();
   refs.modalBlock.classList.remove('hidden');
   setWidthAndHeightInModal(currentID);
-  setStartDataOfModalOptions(currentID);
+  resetPresetOptionForAllType(currentID);
 
   refs.handleDistanceInModal.addEventListener('focus', onFocusOnHandleDistanceInModal);
   refs.handleDistanceInModal.addEventListener('input', onInputOnHandleDistanceInModal);

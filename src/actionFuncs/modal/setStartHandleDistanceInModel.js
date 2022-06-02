@@ -21,6 +21,7 @@ export function setStartHandleDistanceInModel(id) {
     }
   }
   if (option.typeOfOpening === 'type-2') {
+    console.log("option.typeOfOpening === 'type-2'");
     if (option.isTurnTiltGetriebe === false) {
       refs.handleDistanceInModal.value = '';
       refs.handleDistanceInModal.setAttribute('disabled', 'disabled');
@@ -30,7 +31,6 @@ export function setStartHandleDistanceInModel(id) {
     if (option.isTurnTiltGetriebe === true) {
       refs.handleDistanceInModal.removeAttribute('disabled');
       refs.handleDistanceInModal.parentNode.classList.remove('disabled-text-gray');
-      return;
     }
   }
   if (option.hanleDistance) {

@@ -6,7 +6,7 @@ export function getBottomEndingForGetriebe(options) {
   if ((!isTurnTiltGetriebe && typeOfOpening === 'type-2') || typeOfOpening === 'type-5') {
     return;
   }
-  if ((typeOfOpening === 'type-3' && height < 800) || width < 470) {
+  if (typeOfOpening === 'type-3' && height < 800) {
     return;
   }
   if (height >= 470 && height < 1750) {

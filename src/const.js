@@ -22,7 +22,7 @@ export const numberAfterDecimalPoint = 2;
 
 export const clientPercentage = {
   deilleDiscount: 8,
-  tradeMargin: 23,
+  tradeMargin: 25,
   setTradeMargin(newTradeMargin) {
     this.tradeMargin = newTradeMargin;
   },
