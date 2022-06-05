@@ -1,9 +1,11 @@
 import { addArticleToOrderList, singleOrder } from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
+import { getCenterLocks } from '../getCenterLocks';
 
 export function getArticlesForType5(options) {
   const { typeOfOpening } = options;
   if (typeOfOpening !== 'type-5') return;
+  getCenterLocks(options);
   const quantityOfPlates = getQuantityOfPlates(singleOrder, typeOfOpening);
   if (quantityOfPlates === 0) return;
   const strikePlates = findElementsByArticle(34610);

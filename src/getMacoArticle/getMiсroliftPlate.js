@@ -18,6 +18,9 @@ export function getMicroliftPlate(options) {
   if (typeOfOpening === 'type-3' && height < 800) {
     return;
   }
+  if (shtulpBlock === 'getriebe' && typeOfOpening === 'type-5') {
+    return;
+  }
 
   if (shtulpBlock === 'latch' && typeOfOpening === 'type-5') {
     if (sideOfHinge === 'right') {
