@@ -15,7 +15,7 @@ export function getMicroliftPlate(options) {
   if ((typeOfOpening === 'type-2' && !isTurnTiltGetriebe) || height < 800) {
     return;
   }
-  if (typeOfOpening === 'type-3' && height < 800) {
+  if ((typeOfOpening === 'type-3' && height < 800) || typeOfOpening === 'type-4') {
     return;
   }
   if (shtulpBlock === 'getriebe' && typeOfOpening === 'type-5') {

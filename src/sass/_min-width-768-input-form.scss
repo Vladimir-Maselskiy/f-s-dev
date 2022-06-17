@@ -199,3 +199,203 @@ form {
     height: 100%;
   }
 }
+
+@media print {
+  form {
+    position: relative;
+  }
+
+  .input-data-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+  }
+
+  .form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    outline: solid $accent-color 2px;
+  }
+
+  .width-height-quantity-block {
+    display: flex;
+  }
+
+  .size-input,
+  .size-input-modal {
+    width: 50px;
+  }
+
+  .required-option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .side-of-hinge-radio-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .system-of-pvc-block {
+    margin-top: 20px;
+  }
+
+  .side-of-hinge-radio-block__label {
+    margin: 0;
+  }
+
+  .side-of-hinge-css {
+    margin-left: 20px;
+  }
+
+  .size-input {
+    font: inherit;
+    border: 2px solid #bdbdbd;
+  }
+
+  .size-input.valid {
+    border-color: $accent-color;
+  }
+
+  .size-input.invalid {
+    border-color: #f44336;
+  }
+
+  .form-group__input-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .width-height-quantity-block label {
+    margin-right: 20px;
+  }
+
+  // ------options? button----------------
+
+  .button {
+    padding: 0;
+    color: $third-text-color;
+    height: 40px;
+    width: 200px;
+    border: $accent-color 1px solid;
+    background-color: $accent-color;
+    border-radius: 30px;
+    padding-right: 40px;
+  }
+
+  .add-button {
+    position: relative;
+    display: block;
+
+    margin: 20px auto 0 auto;
+  }
+
+  .button:hover {
+    background: $accent-color-hover;
+    border: $accent-color-hover 1px solid;
+
+    & .add-button-svg__icon {
+      fill: $accent-color-hover;
+    }
+  }
+
+  .add-button:active {
+    background: $accent-color-activ;
+    border: $accent-color-activ 1px solid;
+    top: 2px;
+    & .add-button-svg__icon {
+      fill: $accent-color-activ;
+    }
+  }
+
+  .icon-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+  }
+
+  .add-button-svg__icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    fill: $accent-color;
+    transform: translate(-50%, -50%);
+  }
+
+  .add-button-svg__icon use {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    //   //   fill: $accent-color;
+    //   transform: translate(-50%, -50%);
+  }
+
+  .order-count-button {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    transform: translateY(-105%);
+    border-bottom-left-radius: 0;
+  }
+
+  .order-count-button:disabled {
+    background: $accent-color-disabled;
+    border: $accent-color-disabled 1px solid;
+
+    & .add-button-svg__icon {
+      fill: $accent-color-disabled;
+    }
+  }
+
+  .remove-option-button-block {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    & button {
+      position: relative;
+      border-radius: 3px;
+      background-color: $accent-color;
+      border: $accent-color-hover;
+      fill: aliceblue;
+      border: none;
+    }
+    & button:hover,
+    & button:focus {
+      background-color: $accent-color-hover;
+      border: $accent-color-activ;
+    }
+    & button:active {
+      background-color: $accent-color-activ;
+      top: 2px;
+    }
+
+    & button:disabled {
+      background: $accent-color-disabled;
+    }
+    & button:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .button-icon {
+    padding: 0;
+    border-radius: 0;
+    width: 60px;
+    height: 80px;
+    & .button-icon-svg {
+      width: 40px;
+      height: 100%;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { addArticleToOrderList } from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
 import { getLatch } from '../additionalArticle/getLatch';
+import { getStrikePlatesForShtulp } from '../additionalArticle/getStrikePlatesForShtulp';
 
 export function getGetriebeForSchtulpPassive(options) {
   const {
@@ -37,5 +38,6 @@ export function getGetriebeForSchtulpPassive(options) {
     if (height > 2250) {
       addArticleToOrderList(findElementsByArticle(206630, 206630), 7);
     }
+    getStrikePlatesForShtulp(options);
   }
 }
