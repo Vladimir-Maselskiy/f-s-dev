@@ -3,6 +3,10 @@ export let singleOrder = [];
 
 export function addArticleToOrderList(articles, articleGroupID) {
   articles.forEach(article => {
+    console.log('article', article);
+    if (!article) {
+      return;
+    }
     const newArticle = JSON.parse(JSON.stringify(article));
     newArticle.articleGroupID = articleGroupID;
     if (!newArticle.quantity) newArticle.quantity = 1;
