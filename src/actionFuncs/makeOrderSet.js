@@ -35,10 +35,6 @@ export function makeOrderSet() {
       }
     }
 
-    // if (options.width >= 800) {
-    //   options.gorizontalLock = true;
-    // }
-    // console.log(options.gorizontalLock);
     if (!options.gorizontalLock && options.typeOfOpening === undefined) {
       if (options.width > 800) {
         options.gorizontalLock = true;
@@ -48,8 +44,6 @@ export function makeOrderSet() {
         }
       }
     }
-
-    console.log('options:', options);
     makeSingleSet(options);
   });
 

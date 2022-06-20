@@ -15,5 +15,4 @@ export function makeModalOptionObjectOnCloseModal(id) {
   if (modalOption.typeOfOpening === undefined) {
     modalOption.typeOfOpening = 'type-1';
   }
-  console.log(modalOption);
 }

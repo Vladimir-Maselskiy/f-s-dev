@@ -11,7 +11,6 @@ export function makeTypeOfOpeningModalOptionObjectOnCloseModal(event, id) {
   options.typeOfOpening = event.target[0].options[event.target[0].options.selectedIndex].value;
 
   resetPresetOptionForAllType(id);
-  console.log(options);
   const isTypeOfOpeningChanged = getIsTypeOfOpeningChanged(event);
 
   if (isTypeOfOpeningChanged) {

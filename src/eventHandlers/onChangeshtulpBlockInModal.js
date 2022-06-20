@@ -1,7 +1,6 @@
 import { refs } from '../refs';
 
 export function onChangeshtulpBlockInModal(event) {
-  console.log(event.target);
   if (event.target.value === 'getriebe') {
     if (refs.widthInModalInput.value >= 470 && refs.widthInModalInput.value <= 800) {
       refs.gorizontalLock.removeAttribute('disabled');
