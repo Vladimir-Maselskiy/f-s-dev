@@ -17,6 +17,8 @@ import { makeScrollToBottom } from './actionFuncs/makeScrollToBottom';
 import { onNewOrderButtonClick } from './eventHandlers/onNewOrderButtonClick';
 import { onTypeOfOpeningButtonClick } from './eventHandlers/onTypeOfOpeningButtonClick';
 import { onChangeOnInput } from './eventHandlers/onChangeOnInput';
+import { onModalCloseButtonClick } from './eventHandlers/onModalCloseButtonClick';
+import { onTypeOfOpeningModalCloseButton } from './eventHandlers/onTypeOfOpeningModalCloseButton';
 
 refs.form.addEventListener('submit', onSubmit);
 refs.form.addEventListener('click', onClickbyForm);
@@ -30,6 +32,8 @@ refs.optionButton.addEventListener('click', onOptionButtonClick);
 refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.submitModalButton.addEventListener('click', onSubmitModalButton);
 refs.newOrderButtonRef.addEventListener('click', onNewOrderButtonClick);
+refs.modalCloseButton.addEventListener('click', onModalCloseButtonClick);
+refs.typeOfOpeningModalCloseButton.addEventListener('click', onTypeOfOpeningModalCloseButton);
 
 startCheck();
 

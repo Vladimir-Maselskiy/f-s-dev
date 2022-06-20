@@ -29,6 +29,7 @@ export const refs = {
 
   modalFormRef: document.querySelector('.modal-form'),
   modalBlock: document.querySelector('[data-modal]'),
+  modalCloseButton: document.querySelector('.modal .modal__close-button'),
 
   // typeOfOpeningModalFormRef
 
@@ -38,4 +39,7 @@ export const refs = {
     '[data-modal="type-of-opening-modal__submit-button"]',
   ),
   selectBlockTypeOfOpening: document.querySelector('.select-type-of-opening-block'),
+  typeOfOpeningModalCloseButton: document.querySelector(
+    '.type-of-opening-modal .modal__close-button',
+  ),
 };
