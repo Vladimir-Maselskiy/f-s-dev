@@ -3,7 +3,6 @@ export let singleOrder = [];
 
 export function addArticleToOrderList(articles, articleGroupID) {
   articles.forEach(article => {
-    console.log('article', article);
     if (!article) {
       return;
     }
