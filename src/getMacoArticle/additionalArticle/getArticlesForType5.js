@@ -1,4 +1,7 @@
-import { addArticleToOrderList, singleOrder } from '../../actionFuncs/addArticleToOrderList';
+import {
+  addArticleToOrderList,
+  singleOrder,
+} from '../../actionFuncs/addArticleToOrderList';
 import { findElementsByArticle } from '../../calcFuncs/findElementsByArticle';
 import { getCenterLocks } from '../getCenterLocks';
 

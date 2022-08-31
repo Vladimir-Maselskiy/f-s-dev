@@ -33,7 +33,10 @@ refs.marginButton.addEventListener('click', onMarginButtonClick);
 refs.submitModalButton.addEventListener('click', onSubmitModalButton);
 refs.newOrderButtonRef.addEventListener('click', onNewOrderButtonClick);
 refs.modalCloseButton.addEventListener('click', onModalCloseButtonClick);
-refs.typeOfOpeningModalCloseButton.addEventListener('click', onTypeOfOpeningModalCloseButton);
+refs.typeOfOpeningModalCloseButton.addEventListener(
+  'click',
+  onTypeOfOpeningModalCloseButton,
+);
 
 startCheck();
 

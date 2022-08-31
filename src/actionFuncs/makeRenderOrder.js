@@ -1,3 +1,6 @@
+import axios from 'axios';
+import { makeTotalOrderValue } from '../calcFuncs/getTotalOrderValue';
+import { commerceStatistic, numberAfterDecimalPoint } from '../const';
 import { refs } from '../refs';
 import { createNormalOrderTable } from './createNormalOrderTable';
 import { sortOrder } from './sortOrder';
@@ -16,4 +19,16 @@ export function makeRenderOrder(order) {
   refs.tableContainerRef.insertAdjacentElement('afterbegin', refs.table);
   refs.tableContainerRef.classList.remove('hidden');
   refs.newOrderButtonRef.classList.remove('hidden');
+
+  // analitics
+  if (commerceStatistic) {
+    const priceOfOrder = makeTotalOrderValue(order).toFixed(
+      numberAfterDecimalPoint,
+    );
+    const date = new Date();
+    axios.post('https://630f7dfe498924524a8f5834.mockapi.io/statistic', {
+      priceOfOrder,
+      date,
+    });
+  }
 }
