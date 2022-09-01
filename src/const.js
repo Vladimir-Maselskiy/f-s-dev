@@ -21,14 +21,14 @@ export const sizeRestrictionsStandartMode = {
 export const numberAfterDecimalPoint = 2;
 
 export const clientPercentage = {
-  deilleDiscount: 0,
-  tradeMargin: 0,
+  deilleDiscount: 3,
+  tradeMargin: 25,
   setTradeMargin(newTradeMargin) {
     this.tradeMargin = newTradeMargin;
   },
 };
 
-export const commerceStatistic = false;
+export const commerceStatistic = true;
 
 export function setCurrentSizeRestrictions(options) {
   if (options.typeOfOpening === 'type-3') {
