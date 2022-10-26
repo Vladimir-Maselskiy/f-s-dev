@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { clientPercentage } from '../const';
 import { makeTotalOrderValue } from '../calcFuncs/getTotalOrderValue';
 import { commerceStatistic, numberAfterDecimalPoint } from '../const';
 import { refs } from '../refs';
@@ -29,6 +30,7 @@ export function makeRenderOrder(order) {
     axios.post('https://630f7dfe498924524a8f5834.mockapi.io/statistic', {
       priceOfOrder,
       date,
+      tradeMargin: clientPercentage.tradeMargin,
     });
   }
 }

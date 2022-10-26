@@ -6,6 +6,7 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
   resetStatusOfGorizontalLock();
 
   const option = findModalOptionObjectByID(id);
+  console.log('option', option);
 
   if (option.typeOfOpening === 'type-5' && option.shtulpBlock === 'latch') {
     refs.gorizontalLock.checked = false;
@@ -14,14 +15,20 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
     return;
   }
 
-  if (option.typeOfOpening === 'type-2' && !refs.isTurnTiltGetriebeInModal.checked) {
+  if (
+    option.typeOfOpening === 'type-2' &&
+    !refs.isTurnTiltGetriebeInModal.checked
+  ) {
     refs.gorizontalLock.checked = false;
     refs.gorizontalLock.disabled = 'disabled';
     refs.gorizontalLock.parentNode.classList.add('disabled-text-gray');
     return;
   }
-  if (option.typeOfOpening === 'type-2' && refs.isTurnTiltGetriebeInModal.checked) {
-    refs.gorizontalLock.checked = option.gorizontalLock.checked;
+  if (
+    option.typeOfOpening === 'type-2' &&
+    refs.isTurnTiltGetriebeInModal.checked
+  ) {
+    refs.gorizontalLock.checked = option.gorizontalLock;
     refs.gorizontalLock.removeAttribute('disabled');
     refs.gorizontalLock.parentNode.classList.remove('disabled-text-gray');
     return;
