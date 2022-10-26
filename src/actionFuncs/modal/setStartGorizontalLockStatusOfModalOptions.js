@@ -6,7 +6,6 @@ export function setStartGorizontalLockStatusOfModalOptions(id) {
   resetStatusOfGorizontalLock();
 
   const option = findModalOptionObjectByID(id);
-  console.log('option', option);
 
   if (option.typeOfOpening === 'type-5' && option.shtulpBlock === 'latch') {
     refs.gorizontalLock.checked = false;
