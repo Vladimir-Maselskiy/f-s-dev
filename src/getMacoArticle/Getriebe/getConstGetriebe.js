@@ -22,7 +22,7 @@ export function getConstGetriebe(height, hanleDistance) {
     addArticleToOrderList(findElementsByArticle(212158), 3);
     cutGetriebeLength = hanleDistance + 875;
   }
-  if (hanleDistance > 875 && hanleDistance <= 1125) {
+  if (hanleDistance > 875) {
     addArticleToOrderList(findElementsByArticle(212160), 3);
     cutGetriebeLength = hanleDistance + 1125;
   }
@@ -31,5 +31,11 @@ export function getConstGetriebe(height, hanleDistance) {
 
   if (height - cutGetriebeLength > 0) {
     getExtension(height - cutGetriebeLength);
+  }
+
+  // подовжувачі знизу, при потребі
+
+  if (hanleDistance - 1125 > 0) {
+    getExtension(hanleDistance - 1125);
   }
 }

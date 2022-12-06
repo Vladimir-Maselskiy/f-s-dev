@@ -27,7 +27,7 @@ export function getCenterLocks(options) {
         addArticleToOrderList(findElementsByArticle(228398), 6);
       }
     }
-    if (width >= 800 && width < 1200) {
+    if (width >= 800) {
       addArticleToOrderList(findElementsByArticle(211924), 6);
       if (typeOfOpening === 'type-2' && isTurnTiltGetriebe) {
         addArticleToOrderList(findElementsByArticle(211924), 6);
@@ -35,7 +35,11 @@ export function getCenterLocks(options) {
     }
   }
 
-  if (typeOfOpening === 'type-2' || typeOfOpening === 'type-3' || typeOfOpening === 'type-5') {
+  if (
+    typeOfOpening === 'type-2' ||
+    typeOfOpening === 'type-3' ||
+    typeOfOpening === 'type-5'
+  ) {
     return;
   }
 

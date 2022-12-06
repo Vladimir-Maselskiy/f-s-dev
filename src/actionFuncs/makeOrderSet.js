@@ -15,14 +15,21 @@ export function makeOrderSet() {
     const currentID = getCurrentIDByFormRef(elementRef);
     const obj = findModalOptionObjectByID(currentID);
     const options = obj ? obj : { currentID };
-    options.width = Number(elementRef.querySelector('[data-input="width"]').value);
-    options.height = Number(elementRef.querySelector('[data-input="height"]').value);
-    options.quantitySet = Number(elementRef.querySelector('[data-value="value"]').textContent);
+    options.width = Number(
+      elementRef.querySelector('[data-input="width"]').value,
+    );
+    options.height = Number(
+      elementRef.querySelector('[data-input="height"]').value,
+    );
+    options.quantitySet = Number(
+      elementRef.querySelector('[data-value="value"]').textContent,
+    );
 
     const sideOfHingeElementsRef = elementRef.querySelectorAll(
       `[name="side-of-hinge-${currentID}"]`,
     );
-    const systemOfPVCElementsRef = elementRef.querySelector(`.select-block`).children;
+    const systemOfPVCElementsRef =
+      elementRef.querySelector(`.select-block`).children;
 
     for (const sideOfHingeRef of sideOfHingeElementsRef) {
       if (sideOfHingeRef.checked) {
@@ -35,11 +42,15 @@ export function makeOrderSet() {
       }
     }
 
-    if (!options.gorizontalLock && options.typeOfOpening === undefined) {
+    if (
+      !options.gorizontalLock &&
+      (options.typeOfOpening === undefined ||
+        options.typeOfOpening === 'type-1')
+    ) {
       if (options.width > 800) {
         options.gorizontalLock = true;
       } else {
-        if (options.gorizontalLock < 470) {
+        if (options.width < 470) {
           options.gorizontalLock = false;
         }
       }
