@@ -59,8 +59,15 @@ refs.typeOfOpeningModalCloseButton.addEventListener(
   onTypeOfOpeningModalCloseButton
 );
 
+const rate = localStorage.getItem('rate');
+if (rate) {
+  refs.currencyRate.value = rate;
+}
+
 getCurrentRate().then(({ data }) => {
   refs.currencyRate.value = data.currentRate;
+  console.log('data.currencyRate', data.currentRate);
+  localStorage.setItem('rate', data.currentRate);
 });
 
 startCheck();

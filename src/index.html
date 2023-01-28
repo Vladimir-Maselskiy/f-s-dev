@@ -2,11 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="./images/3.jpeg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#ffffff"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="./images/3.jpeg"
+    />
     <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Furniture systems..." />
+    <meta
+      property="og:title"
+      content="Furniture systems..."
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
@@ -35,7 +47,10 @@
       href="./images/3-svg-editor-image.svg"
       type="image/svg+xml"
     />
-    <link rel="manifest" href="./images/favicons/manifest.json" />
+    <link
+      rel="manifest"
+      href="./images/favicons/manifest.json"
+    />
   </head>
   <body id="body">
     <header>
@@ -52,10 +67,16 @@
               type="number"
               class="currency-rate__input"
               data-currency-rate="currency-rate"
-              value="38.00"
+              value="40.00"
             />
           </label>
-          <button type="button" data-action="margin" >%data</button>
+          <button
+            type="button"
+            data-action="margin"
+            disabled
+          >
+            %data
+          </button>
         </div>
       </section>
       <section class="input-data-section">
@@ -66,26 +87,50 @@
               <div class="width-height-quantity-block">
                 <label class="label"
                   >Ширина
-                  <input type="number" class="size-input" data-input="width" />
+                  <input
+                    type="number"
+                    class="size-input"
+                    data-input="width"
+                  />
                 </label>
                 <label
                   >Висота
-                  <input type="number" class="size-input" data-input="height" />
+                  <input
+                    type="number"
+                    class="size-input"
+                    data-input="height"
+                  />
                 </label>
                 <div id="counter" class="counter-block">
                   <p>Кількість</p>
                   <div class="counter">
-                    <button type="button" data-action="decrement">
-                      <svg class="counter-button__icon" data-action="decrement">
+                    <button
+                      type="button"
+                      data-action="decrement"
+                    >
+                      <svg
+                        class="counter-button__icon"
+                        data-action="decrement"
+                      >
                         <use
                           href="./symbol-defs.svg#icon-minus"
                           data-action="decrement"
                         ></use>
                       </svg>
                     </button>
-                    <span data-value="value" class="counter-value">1</span>
-                    <button type="button" data-action="increment">
-                      <svg class="counter-button__icon" data-action="increment">
+                    <span
+                      data-value="value"
+                      class="counter-value"
+                      >1</span
+                    >
+                    <button
+                      type="button"
+                      data-action="increment"
+                    >
+                      <svg
+                        class="counter-button__icon"
+                        data-action="increment"
+                      >
                         <use
                           class="counter-button_icon__icon"
                           href="./symbol-defs.svg#icon-plus"
@@ -98,7 +143,9 @@
               </div>
               <div class="required-option">
                 <div class="side-of-hinge-radio-block">
-                  <p class="side-of-hinge-radio-block__label">
+                  <p
+                    class="side-of-hinge-radio-block__label"
+                  >
                     Сторона петель:
                   </p>
                   <label>
@@ -122,19 +169,38 @@
                   </label>
                 </div>
                 <div class="system-of-pvc-block">
-                  <label for="size">Профільна система</label>
+                  <label for="size"
+                    >Профільна система</label
+                  >
                   <select class="select-block">
-                    <option value="13" name="system-of-pvc" selected>
+                    <option
+                      value="13"
+                      name="system-of-pvc"
+                      selected
+                    >
                       13-та серія
                     </option>
-                    <option value="9" name="system-of-pvc">9-та серія</option>
-                    <option value="Salamander" name="system-of-pvc">
+                    <option value="9" name="system-of-pvc">
+                      9-та серія
+                    </option>
+                    <option
+                      value="Salamander"
+                      name="system-of-pvc"
+                    >
                       Salamander(13)
                     </option>
-                    <option value="Rehau" name="system-of-pvc">
+                    <option
+                      value="Rehau"
+                      name="system-of-pvc"
+                    >
                       Rehau(13)
                     </option>
-                    <option value="Veka" name="system-of-pvc">Veka(13)</option>
+                    <option
+                      value="Veka"
+                      name="system-of-pvc"
+                    >
+                      Veka(13)
+                    </option>
                   </select>
                 </div>
               </div>
@@ -146,7 +212,9 @@
                 data-action="open-second-modal"
               >
                 <svg class="button-icon-svg">
-                  <use href="/symbol-defs.svg#icon-window"></use>
+                  <use
+                    href="/symbol-defs.svg#icon-window"
+                  ></use>
                 </svg>
               </button>
 
@@ -158,7 +226,9 @@
                 disabled
               >
                 <svg class="button-icon-svg">
-                  <use href="/symbol-defs.svg#icon-cogs"></use>
+                  <use
+                    href="/symbol-defs.svg#icon-cogs"
+                  ></use>
                 </svg>
               </button>
 
@@ -168,7 +238,9 @@
                 data-action="remote"
               >
                 <svg class="button-icon-svg">
-                  <use href="/symbol-defs.svg#icon-bin"></use>
+                  <use
+                    href="/symbol-defs.svg#icon-bin"
+                  ></use>
                 </svg>
               </button>
             </div>
@@ -183,28 +255,40 @@
             Порахувать
             <div class="icon-block">
               <svg class="wide-button-svg__icon">
-                <use href="/symbol-defs.svg#icon-calculator"></use>
+                <use
+                  href="/symbol-defs.svg#icon-calculator"
+                ></use>
               </svg>
             </div>
           </button>
         </form>
         <div class="table-container hidden"></div>
         <div class="container">
-          <button type="button" class="wide-button add-button">
+          <button
+            type="button"
+            class="wide-button add-button"
+          >
             Додати
             <div class="icon-block">
               <svg class="wide-button-svg__icon">
-                <use href="./symbol-defs.svg#icon-plus"></use>
+                <use
+                  href="./symbol-defs.svg#icon-plus"
+                ></use>
               </svg>
             </div>
           </button>
         </div>
         <div class="container">
-          <button type="button" class="wide-button new-order-button hidden">
+          <button
+            type="button"
+            class="wide-button new-order-button hidden"
+          >
             Новий прорахунок
             <div class="icon-block">
               <svg class="wide-button-svg__icon">
-                <use href="./symbol-defs.svg#icon-undo2"></use>
+                <use
+                  href="./symbol-defs.svg#icon-undo2"
+                ></use>
               </svg>
             </div>
           </button>
@@ -218,12 +302,18 @@
     <!-- Modal Window -->
     <div class="backdrop hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__close-button" data-modal-close>
+        <button
+          type="button"
+          class="modal__close-button"
+          data-modal-close
+        >
           <svg class="modal__icon-close">
             <use href="/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
-        <p class="modal__top-text">Додаткові опції комплекта:</p>
+        <p class="modal__top-text">
+          Додаткові опції комплекта:
+        </p>
         <div class="size-input-modal-block">
           <label
             >Ширина
@@ -262,12 +352,17 @@
                   placeholder=""
                 />
               </label>
-              <div class="handle-distance-modal-block__info hidden">
+              <div
+                class="handle-distance-modal-block__info hidden"
+              >
                 enter data
               </div>
             </div>
 
-            <label class="type-2 hidden" data-select="select">
+            <label
+              class="type-2 hidden"
+              data-select="select"
+            >
               Поворотно-відкидний привід(покращений прижим)
               <input
                 type="checkbox"
@@ -276,8 +371,13 @@
                 value="turn-tilt-getriebe-type-2"
               />
             </label>
-            <div class="shtulp-radio-modal-block type-5" data-select="select">
-              <p class="shtulp-radio-modal-block__label">Штульп:</p>
+            <div
+              class="shtulp-radio-modal-block type-5"
+              data-select="select"
+            >
+              <p class="shtulp-radio-modal-block__label">
+                Штульп:
+              </p>
               <label>
                 <input
                   type="radio"
@@ -304,7 +404,10 @@
               data-select="select"
               >Прижим зі сторони петель
               <select class="hinge-side-press-block-modal">
-                <option value="hinge-side-press-type-1" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-1"
+                  name="hinge-side-press"
+                >
                   1шт - накладний
                 </option>
                 <option
@@ -314,24 +417,42 @@
                 >
                   2шт - накладний
                 </option>
-                <option value="hinge-side-press-type-3" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-3"
+                  name="hinge-side-press"
+                >
                   1шт - фальц. петля нерег.
                 </option>
-                <option value="hinge-side-press-type-4" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-4"
+                  name="hinge-side-press"
+                >
                   2шт - фальц. петля нерег.
                 </option>
-                <option value="hinge-side-press-type-5" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-5"
+                  name="hinge-side-press"
+                >
                   1шт - фальц. петля рег.
                 </option>
-                <option value="hinge-side-press-type-6" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-6"
+                  name="hinge-side-press"
+                >
                   2шт - фальц. петля рег.
                 </option>
-                <option value="hinge-side-press-type-7" name="hinge-side-press">
+                <option
+                  value="hinge-side-press-type-7"
+                  name="hinge-side-press"
+                >
                   Без прижиму
                 </option>
               </select>
             </label>
-            <label class="type-1 type-4" data-select="select">
+            <label
+              class="type-1 type-4"
+              data-select="select"
+            >
               Зимове провітрювання
               <input
                 type="checkbox"
@@ -341,7 +462,10 @@
                 checked
               />
             </label>
-            <label class="type-1 type-2 type-4 type-5" data-select="select">
+            <label
+              class="type-1 type-2 type-4 type-5"
+              data-select="select"
+            >
               Нижній горизонтальний прижим
               <input
                 type="checkbox"
@@ -350,7 +474,10 @@
                 value="bottom-horizontal-lock"
               />
             </label>
-            <label class="type-1 type-2 type-4 type-5" data-select="select">
+            <label
+              class="type-1 type-2 type-4 type-5"
+              data-select="select"
+            >
               Без нижньої петлі
               <input
                 type="checkbox"
@@ -368,7 +495,9 @@
               Застосувати
               <div class="icon-block">
                 <svg class="wide-button-svg__icon">
-                  <use href="./symbol-defs.svg#icon-checkmark"></use>
+                  <use
+                    href="./symbol-defs.svg#icon-checkmark"
+                  ></use>
                 </svg>
               </div>
             </button>
@@ -388,19 +517,42 @@
         </button>
         <!-- <p class="type-of-opening-modal__top-text">Тип відкривання:</p> -->
         <div class="type-of-opening-settings-block">
-          <form action="#2" class="type-of-opening-modal-form">
+          <form
+            action="#2"
+            class="type-of-opening-modal-form"
+          >
             <label for="type-of-opening"
               >Тип відкривання
               <select class="select-type-of-opening-block">
-                <option value="type-1" name="type-of-opening" selected>
+                <option
+                  value="type-1"
+                  name="type-of-opening"
+                  selected
+                >
                   Поворотно-відкидна
                 </option>
-                <option value="type-2" name="type-of-opening">Поворотна</option>
-                <option value="type-3" name="type-of-opening">Фрамуга</option>
-                <option value="type-4" name="type-of-opening">
+                <option
+                  value="type-2"
+                  name="type-of-opening"
+                >
+                  Поворотна
+                </option>
+                <option
+                  value="type-3"
+                  name="type-of-opening"
+                >
+                  Фрамуга
+                </option>
+                <option
+                  value="type-4"
+                  name="type-of-opening"
+                >
                   Штульп активна
                 </option>
-                <option value="type-5" name="type-of-opening">
+                <option
+                  value="type-5"
+                  name="type-of-opening"
+                >
                   Штульп пасивна
                 </option>
               </select>
@@ -413,7 +565,9 @@
               Застосувати
               <div class="icon-block">
                 <svg class="wide-button-svg__icon">
-                  <use href="./symbol-defs.svg#icon-checkmark"></use>
+                  <use
+                    href="./symbol-defs.svg#icon-checkmark"
+                  ></use>
                 </svg>
               </div>
             </button>
